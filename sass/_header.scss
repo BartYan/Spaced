@@ -1,0 +1,58 @@
+.nav {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+
+	&_list {
+		display: flex;
+
+		&-item {
+			display: block;
+			padding: 30px 30px;
+			text-decoration: none;
+		}
+	}
+
+	&_logo {
+
+		&-img {
+			width: 70%;
+		}
+	}
+}
+
+
+/*mobile hamburger & overlay menu*/
+.nav-hamburger {
+	position: fixed;
+	margin: 1em;
+	width: 40px;
+	cursor: pointer;
+  }
+  
+  .nav-hamburger-bar {
+	background-color: #000;
+	border-radius: 3px;
+	content: '';
+	display: block;
+	height: 5px;
+	width:40px;
+	margin: 7px 0;
+	transition: all .2s ease-in-out;
+  }
+/* 
+  .nav-hamburger:hover:before {
+	transform: translateY(12px) rotate(135deg);
+  }
+  
+  .nav-hamburger:hover:after {
+	transform: translateY(-12px) rotate(-135deg);
+  }
+  
+  .nav-hamburger:hover span {
+	transform: scale(0);
+  }
+  the end hamburger & overlay menu*/
