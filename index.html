@@ -23,13 +23,22 @@
 
 <body>
     <!--HEADER SECTION-->
-    <header>       
+    <header>
         <nav class="nav">
             <!--MOBILE HEADER-->
             <div class="nav-hamburger">
                 <span class="nav-hamburger-bar"></span>
                 <span class="nav-hamburger-bar"></span>
                 <span class="nav-hamburger-bar"></span>
+            </div>
+            <!-- The overlay -->
+            <div id="mobileMenu" class="nav_overlay">
+                <div class="nav_overlay-content">
+                    <a href="#">projekty</a>
+                    <a href="#">studio</a>
+                    <a href="#">kontakt</a>
+                    <a href="#">EN</a>
+                </div>
             </div>
             <!--DESKTOP HEADER-->
             <ul class="nav_list">
@@ -51,14 +60,14 @@
                     <a class="nav_list-item--link" href="#">PL</a>
                 </li>
             </ul>
-            <div class="nav_logo">
-                <img class="nav_logo-img" src="img/logo_spaced.svg" alt="spaced logo">
-            </div>
+
+            <img class="nav_logo" src="img/logo_spaced.svg" alt="spaced logo">
+
         </nav>
     </header>
 
     <section class="opening">
-        <h1 class="opening_head">projektujemy, ilustrujemy, animujemy</h1>
+        <h1 class="opening_head">projektujemy, ilustrujemy, animujemy.</h1>
         <img class="opening_img" src="img/one.png" alt="">
         <div class="opening_social">
             <a href="#"><img class="opening_social-icon" src="img/instagram.svg" alt="instagram icon"></a>
@@ -70,7 +79,7 @@
     <section>
         <img class="bigArrow" src="img/bigArrow.png" alt="big moving arrow">
     </section>
-
+    
     <section>
         <div class="portfolio">
             <ul class="portfolio_list">
@@ -213,7 +222,7 @@
 
     </footer>
 
-<script src="js/mobile_menu.js"></script>
+    <script src="js/mobile_menu.js"></script>
 </body>
 
 </html>

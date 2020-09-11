@@ -1,5 +1,5 @@
 .nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	display: flex;
@@ -7,8 +7,8 @@
 	z-index: 1;
 
 	&_list {
-		display: flex;
-
+		display: none; //flex;
+		
 		&-item {
 			display: block;
 			padding: 30px 30px;
@@ -17,42 +17,83 @@
 	}
 
 	&_logo {
-
-		&-img {
-			width: 70%;
-		}
+		
+		width: 90px;
 	}
 }
 
 
 /*mobile hamburger & overlay menu*/
 .nav-hamburger {
-	position: fixed;
+	display: block;
 	margin: 1em;
 	width: 40px;
 	cursor: pointer;
-  }
-  
-  .nav-hamburger-bar {
+	z-index: 10;
+}
+
+.nav-hamburger-bar {
 	background-color: #000;
 	border-radius: 3px;
 	content: '';
 	display: block;
 	height: 5px;
-	width:40px;
+	width: 40px;
 	margin: 7px 0;
 	transition: all .2s ease-in-out;
-  }
-/* 
-  .nav-hamburger:hover:before {
-	transform: translateY(12px) rotate(135deg);
-  }
-  
-  .nav-hamburger:hover:after {
-	transform: translateY(-12px) rotate(-135deg);
-  }
-  
-  .nav-hamburger:hover span {
-	transform: scale(0);
-  }
-  the end hamburger & overlay menu*/
+}
+
+.nav_overlay {
+	display: none;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 9;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+	-webkit-animation: fadeIn 0.5s;
+	animation: fadeIn 0.5s;
+}
+
+.nav_overlay-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.nav_overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #fff;
+	display: block;
+	transition: 0.3s;
+}
+
+.nav_overlay a:hover,
+.overlay a:focus {
+	color: #f1f1f1;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

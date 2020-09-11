@@ -25,6 +25,7 @@ body {
         font-family: 'Archivo Black', sans-serif;
         font-size: 40px;
         text-align: left;
+        z-index: 10;
     }
 
     &_img {
@@ -32,6 +33,7 @@ body {
         bottom: 5%;
         right: 15%;
         width: 40%;
+        z-index: -1;
     }
 
     &_social {
@@ -50,7 +52,7 @@ body {
 /*Big arrow section*/
 .bigArrow {
     width: 10%;
-    padding: 100px 200px;
+    padding: 100px 50px;
 }
 
 /*Portfolio section*/
@@ -63,6 +65,7 @@ body {
 
     &_list {
         z-index: 15;
+        margin-left: 5px;
 
         &-link {
             width: 100%;
@@ -71,12 +74,13 @@ body {
 
             &--item {
                 width: 100%;
-                padding: 0px 100px;
+                //padding: 0px 100px;
+                padding: 25px 0 0 0;
                 font-family: 'Archivo Black', sans-serif;
-                font-size: 60px;
+                font-size: 30px;
                 color: black;
                 -webkit-text-fill-color: white;
-                -webkit-text-stroke-width: 1.5px;
+                -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: black;
                 z-index: 5;
             }
@@ -88,40 +92,32 @@ body {
     }
 
     &_imgSm {
-        position: absolute;
-        top: -5%;
-        right: 10%;
-        width: 20%;
-        z-index: -1 !important;
+        display: none;
     }
 
     &_imgLg {
-        position: absolute;
-        bottom: -5%;
-        right: 15%;
-        width: 40%;
-        z-index: -2 !important;
+        display: none;
     }
 }
 
 /*About section*/
 .about {
     position: relative;
+    padding-left: 5px;
 
     &_head {
-        margin: 200px 0 100px 0;
-        padding: 0 100px;
+        margin: 100px 0 50px 0;
         font-family: 'Archivo Black', sans-serif;
-        font-size: 50px;
+        font-size: 40px;
     }
 
     &_text {
-        width: 55%;
-        padding: 0px 100px;
-        font-size: 35px;
+        width: 95%;
+        font-size: 23px;
     }
 
     &_rightLogo {
+        display: none;
         width: 40%;
         position: absolute;
         top: 10%;
@@ -130,14 +126,14 @@ body {
 
     &_photos {
         position: relative;
-        height: 1300px;
+        //height: 1300px;
 
         &-logo {
             width: 200px;
             height: 200px;
             position: absolute;
-            top: 30%;
-            left: 10%;
+            top: 70%;
+            z-index: 7;
 
             &--syg {
                 @include logo;
@@ -149,27 +145,18 @@ body {
         }
 
         &-one {
-            width: 25%;
-            position: absolute;
-            top: 20%;
-            left: 30%;
-            z-index: 10;
+            width: 70%;
+            display: block;
+            margin: 50px auto 0 auto;
+            z-index: 6;
         }
 
         &-two {
-            width: 35%;
-            position: absolute;
-            bottom: 5%;
-            left: 50%;
-            z-index: 9;
+            display: none;
         }
 
         &-three {
-            width: 18%;
-            position: absolute;
-            bottom: 8%;
-            left: 20%;
-            z-index: 9;
+            display: none;
         }
     }
 }
@@ -181,19 +168,18 @@ body {
 
     &_top {
         display: flex;
+        flex-wrap: wrap;
         width: 100%;
 
         &-txt {
-            width: 50%;
-            padding: 100px 100px;
+            width: 100%;
 
             h3 {
-                font-size: 80px;
+                font-size: 40px;
             }
 
             p {
-                font-size: 40px;
-                margin: 20px 0 0 350px;
+                font-size: 30px;
             }
         }
 
@@ -201,7 +187,9 @@ body {
             width: 50%;
 
             &--img {
+                display: block;
                 width: 60%;
+                margin: 50px auto 0 auto;
             }
         }
     }
@@ -209,27 +197,21 @@ body {
     &_bottom {
         position: relative;
         width: 100%;
-        height: 150px;
         margin-top: 50px;
 
         &-logo {
-            width: 40%;
-            position: absolute;
-            top: -200px;
-            left: -20%;
+            display: none;
         }
 
         &-form {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-
+            
             &--box {
-                width: 480px;
-                height: 80px;
+                width: 80%;
+                height: 60px;
+                margin: 0 auto 0 auto;
                 background-color: #000;
                 color: #fff;
-                font-size: 40px;
+                font-size: 25px;
             }
         }
     }
@@ -238,16 +220,15 @@ body {
 
 /*Footer section*/
 .footer {
-    margin: 400px 0 0 0;
-    display: flex;
+    margin: 100px 0 0 0;
     background-color: #F2F0E7;
 
     &_nav {
-        padding: 50px 100px 150px 100px;
+        padding: 50px 0 0 20px;
 
         &-link {
             text-decoration: none;
-            color:#000;
+            color: #000;
 
             &--item {
                 padding: 15px 0;
@@ -258,6 +239,7 @@ body {
 
     .footer_social {
         display: flex;
+
         &-item {
             width: 12px;
             padding: 0 20px 0 0;
