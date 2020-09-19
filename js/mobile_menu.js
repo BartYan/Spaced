@@ -1,4 +1,4 @@
-let hamburger = document.querySelector('.nav-hamburger');
+let hamburger = document.querySelector('.nav_hamburger');
 let bar = hamburger.getElementsByTagName("span");
 let mobileMenu = document.getElementById("mobileMenu");
 
