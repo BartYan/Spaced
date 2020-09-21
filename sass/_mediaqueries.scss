@@ -125,6 +125,7 @@
 
 	.nav {
 		position: absolute;
+		justify-content: space-between;
 
 		&_list {
 			display: flex;
