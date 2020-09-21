@@ -9,11 +9,16 @@
 
 	&_list {
 		display: none; //flex;
-		
+
 		&-item {
 			display: block;
 			padding: 30px 30px;
-			text-decoration: none;
+
+			&--link {
+				text-decoration: none;
+				border: none;
+				color: #000;
+			}
 		}
 	}
 
@@ -52,7 +57,7 @@
 		background-color: rgba(0, 0, 0, 0.9);
 		-webkit-animation: fadeIn 0.5s;
 		animation: fadeIn 0.5s;
-		
+
 		&-content {
 			position: absolute;
 			left: 50%;

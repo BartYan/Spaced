@@ -141,6 +141,7 @@
 			padding: 200px 0 0 10px;
 			font-size: 50px;
 		}
+
 		&_img {
 			width: 30%;
 		}
@@ -182,9 +183,15 @@
 		}
 	}
 
+	/*Big arrow section*/
+	.bigArrow {
+		padding: 100px 50px 0px 200px;
+	}
+
 	/*About section*/
 	.about {
 		padding-left: 0;
+		overflow: hidden;
 
 		&_head {
 			padding: 0 100px;
@@ -198,7 +205,7 @@
 		}
 
 		&_rightLogo {
-			display:block;
+			display: block;
 			width: 40%;
 			position: absolute;
 			top: 15%;
@@ -247,6 +254,7 @@
 	/*Contact section*/
 	.contact {
 		margin: 200px 0 100px 0;
+
 		&_top {
 			display: flex;
 			flex-wrap: nowrap;
@@ -293,16 +301,277 @@
 	.footer {
 		margin: 400px 0 0 0;
 		font-size: 35px;
-		
+
 		&_nav {
 			padding: 50px 100px 150px 100px;
-			
+
 		}
 	}
 }
 
 @media (min-width: 1200px) and (orientation: portrait) {}
 
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+	.opening {
+		&_head {
+			padding: 250px 0 0 10px;
+			font-size: 70px;
+		}
+	}
+
+	/*Portfolio section*/
+	.portfolio {
+		&_list {
+			&-link {
+				&--item {
+					font-size: 70px;
+				}
+			}
+		}
+	}
+
+	/*About section*/
+	.about {
+
+		&_head {
+			padding: 0 100px;
+			font-size: 70px;
+		}
+
+		&_text {
+			width: 55%;
+			font-size: 50px;
+		}
+
+		&_photos {
+			height: 1500px;
+		}
+	}
+
+	/*contact section*/
+	.contact {
+		margin: 200px 0 200px 0;
+
+		&_top {
+
+			&-txt {
+				width: 50%;
+
+				h3 {
+					font-size: 70px;
+				}
+
+				p {
+					font-size: 50px;
+					margin: 20px 0 0 400px;
+				}
+			}
+		}
+
+		&_bottom {
+
+			&-form {
+
+				&--box {
+					margin: 20% auto 0 auto;
+					font-size: 40px;
+				}
+			}
+		}
+	}
+
+
+	/*Footer section*/
+	.footer {
+		margin: 600px 0 0 0;
+	}
+}
+
 
 @media (min-width: 1600px) and (orientation: portrait) {}
+
+@media (min-width: 2200px) {
+	.nav {
+		&_list {
+			
+			&-item {
+				
+				&--link {
+					font-size: 25px;
+				}
+			}
+		}
+	
+		&_logo {
+			width: 120px;
+		}
+	}
+
+	.opening {
+		&_head {
+			padding: 300px 0 0 10px;
+			font-size: 100px;
+		}
+	}
+
+	/*Portfolio section*/
+	.portfolio {
+		&_list {
+			&-link {
+				&--item {
+					font-size: 100px;
+				}
+			}
+		}
+	}
+
+	/*About section*/
+	.about {
+		margin: 400px 0 100px 0;
+		&_head {
+			font-size: 100px;
+		}
+
+		&_photos {
+
+			&-logo {
+				width: 400px;
+			}
+
+			height: 2000px;
+		}
+	}
+
+	/*contact section*/
+	.contact {
+
+		&_top {
+
+			&-txt {
+				h3 {
+					font-size: 100px;
+				}
+			}
+		}
+
+		&_bottom {
+
+			&-form {
+
+				&--box {
+					width: 600px;
+					height: 120px;
+					font-size: 50px;
+				}
+			}
+		}
+	}
+
+
+	/*Footer section*/
+	.footer {
+		margin: 600px 0 0 0;
+	}
+}
+
+
+@media (min-width: 2200px) and (orientation: portrait) {}
+
+@media (min-width: 2800px) {
+
+	.nav {
+		&_list {
+			
+			&-item {
+				
+				&--link {
+					font-size: 30px;
+				}
+			}
+		}
+	
+		&_logo {
+			width: 150px;
+		}
+	}
+
+	.opening {
+		&_head {
+			padding: 350px 0 0 10px;
+			font-size: 140px;
+		}
+
+		&_social {
+			&-icon {
+				width: 50px;
+				padding: 20px 30px;
+			}
+		}
+	}
+
+	/*Portfolio section*/
+	.portfolio {
+		&_list {
+			&-link {
+				&--item {
+					font-size: 140px;
+				}
+			}
+		}
+	}
+
+	/*About section*/
+	.about {
+
+		&_head {
+			font-size: 140px;
+		}
+
+		&_text {
+			font-size: 80px;
+		}
+
+		&_photos {
+			height: 2800px;
+		}
+	}
+
+	/*contact section*/
+	.contact {
+
+		&_top {
+
+			&-txt {
+				h3 {
+					font-size: 140px;
+				}
+
+				p {
+					font-size: 80px;
+					margin: 20px 0 0 700px;
+				}
+			}
+		}
+
+		&_bottom {
+
+			&-form {
+
+				&--box {
+					width: 900px;
+					height: 150px;
+					font-size: 80px;
+				}
+			}
+		}
+	}
+
+
+	/*Footer section*/
+	.footer {
+		margin: 800px 0 0 0;
+	}
+}
+
+
+@media (min-width: 2800px) and (orientation: portrait) {}
