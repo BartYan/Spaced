@@ -1,9 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Archivo', sans-serif;
+    background-color: $color_white;
     box-sizing: border-box;
     overflow-x: hidden;
+}
+
+.color_red {
+    color: $color_red !important;
 }
 
 @mixin center {
@@ -21,7 +30,7 @@ body {
     height: 100vh;
 
     &_head {
-        padding: 100px 0 0 10px;
+        padding: 150px 0 0 10px;
         font-family: 'Archivo Black', sans-serif;
         font-size: 40px;
         text-align: left;
@@ -45,19 +54,32 @@ body {
             display: block;
             width: 20px;
             padding: 10px 30px;
+            transition: 0.1s;
+        }
+
+        &-icon:hover {
+            cursor: pointer;
         }
     }
 }
 
 /*Big arrow section*/
 .bigArrow {
-    width: 10%;
-    padding: 100px 50px 0px 50px;
+    position: relative;
+    height: 80px;
+
+    &_img {
+        width: 10%;
+        position: absolute;
+        left: 20%;
+        -webkit-animation: movingArrow 2s linear infinite;
+        animation: movingArrow 2s linear infinite;
+    }
 }
 
 /*Portfolio section*/
 .portfolio {
-    
+
     display: block;
     position: relative;
     width: 100%;
@@ -202,7 +224,7 @@ body {
         }
 
         &-form {
-            
+
             &--box {
                 position: relative;
                 width: 80%;
@@ -241,6 +263,7 @@ body {
             }
         }
     }
+
     &_social {
         display: flex;
 

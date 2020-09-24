@@ -34,9 +34,9 @@
             <!-- The overlay -->
             <div id="mobileMenu" class="nav_overlay">
                 <div class="nav_overlay-content">
-                    <a href="#">projekty</a>
-                    <a href="#">studio</a>
-                    <a href="#">kontakt</a>
+                    <a href="#portfolio">projekty</a>
+                    <a href="#about">studio</a>
+                    <a href="#contact">kontakt</a>
                     <a href="#">EN</a>
                 </div>
             </div>
@@ -46,18 +46,18 @@
                     <a class="nav_list-item--link" href="#">home</a>
                 </li>
                 <li class="nav_list-item">
-                    <a class="nav_list-item--link" href="#">projekty</a>
+                    <a class="nav_list-item--link" href="#portfolio">projekty</a>
                 </li>
                 <li class="nav_list-item">
-                    <a class="nav_list-item--link" href="#">studio</a>
+                    <a class="nav_list-item--link" href="#about">studio</a>
                 </li>
                 <li class="nav_list-item">
-                    <a class="nav_list-item--link" href="#">kontakt</a>
+                    <a class="nav_list-item--link" href="#contact">kontakt</a>
                 </li>
                 <li class="nav_list-item">
                     <a class="nav_list-item--link" href="#">EN</a>
                     <span class="nav_list-item--link">/</span>
-                    <a class="nav_list-item--link" href="#">PL</a>
+                    <a class="nav_list-item--link color_red" href="#">PL</a>
                 </li>
             </ul>
 
@@ -67,21 +67,23 @@
     </header>
 
     <section class="opening">
-        <h1 class="opening_head">projektujemy, ilustrujemy, animujemy.</h1>
+        <h1 class="opening_head">
+            <span class="color_red">projektujemy</span>, ilustrujemy, animujemy
+        </h1>
         <img class="opening_img" src="img/one.png" alt="">
         <div class="opening_social">
-            <a href="#"><img class="opening_social-icon" src="img/instagram.svg" alt="instagram icon"></a>
-            <a href="#"><img class="opening_social-icon" src="img/facebook.svg" alt="facebook icon"></a>
-            <a href="#"><img class="opening_social-icon" src="img/behance.svg" alt="behance icon"></a>
+            <a href="#"><img class="opening_social-icon" src="img/instagram_red.svg" alt="instagram icon"></a>
+            <a href="#"><img class="opening_social-icon" src="img/facebook_red.svg" alt="facebook icon"></a>
+            <a href="#"><img class="opening_social-icon" src="img/behance_red.svg" alt="behance icon"></a>
         </div>
     </section>
 
-    <section>
-        <img class="bigArrow" src="img/bigArrow.png" alt="big moving arrow">
+    <section class="bigArrow">
+        <img class="bigArrow_img" src="img/bigArrow.png" alt="big moving arrow">
     </section>
     
     <section>
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio">
             <ul class="portfolio_list">
                 <a href="#" class="portfolio_list-link">
                     <li class="portfolio_list-link--item">
@@ -136,7 +138,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <h2 class="about_head">spaced</h2>
         <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus ligula sit amet
             rhoncus faucibus. Sed posuere iaculis sapien, eget gravida leo pulvinar sit amet. Morbi ac risus ipsum. In
@@ -155,7 +157,7 @@
         </article>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contact_top">
             <div class="contact_top-txt">
                 <h3>napisz do nas!</h3>

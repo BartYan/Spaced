@@ -17,3 +17,107 @@
 		opacity: 1;
 	}
 }
+
+
+/*MOVING BIG ARROW */
+@-moz-keyframes movingArrow {
+
+	0%,
+	100% {
+		top: 0;
+	}
+
+	50% {
+		top: 50px;
+	}
+}
+
+@-ms-keyframes movingArrow {
+
+	0%,
+	100% {
+		top: 0;
+	}
+
+	50% {
+		top: 50px;
+	}
+}
+
+@keyframes movingArrow {
+
+	0%,
+	100% {
+		top: 0;
+	}
+
+	50% {
+		top: 50px;
+	}
+}
+
+@-webkit-keyframes movingArrow {
+
+	0%,
+	100% {
+		top: 0;
+	}
+
+	50% {
+		top: 50px;
+	}
+}
+
+
+/*ANIMATION MEDIA QUERIES */
+@media (min-width: 2200px) {
+
+	/*MOVING BIG ARROW */
+	@-moz-keyframes movingArrow {
+
+		0%,
+		100% {
+			top: 0;
+		}
+
+		50% {
+			top: 100px;
+		}
+	}
+
+	@-ms-keyframes movingArrow {
+
+		0%,
+		100% {
+			top: 0;
+		}
+
+		50% {
+			top: 100px;
+		}
+	}
+
+	@keyframes movingArrow {
+
+		0%,
+		100% {
+			top: 0;
+		}
+
+		50% {
+			top: 100px;
+		}
+	}
+
+	@-webkit-keyframes movingArrow {
+
+		0%,
+		100% {
+			top: 0;
+		}
+
+		50% {
+			top: 100px;
+		}
+	}
+}
