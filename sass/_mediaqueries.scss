@@ -130,7 +130,8 @@
 	.nav {
 		position: absolute;
 		justify-content: space-between;
-
+		height: auto;
+		
 		&_list {
 			display: flex;
 			&-item {
