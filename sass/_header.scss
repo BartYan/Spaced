@@ -7,14 +7,15 @@
 	//justify-content: space-between;
 	z-index: 99;
 	background-color: $color_white;
-	font-family: 'Archivo Black', sans-serif;
+	font-family: 'obviously_wide_bold';
+	font-weight: bold;
 
 	&_list {
 		display: none; //flex;
 
 		&-item {
 			display: block;
-			padding: 40px 40px;
+			padding: 50px 10px 0 90px;
 
 			&--link {
 				text-decoration: none;
@@ -29,7 +30,7 @@
 	}
 
 	&_logo {
-		width:50px;
+		width:70px;
 	}
 
 	/*mobile hamburger & overlay menu*/

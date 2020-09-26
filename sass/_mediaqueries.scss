@@ -35,11 +35,11 @@
 	}
 
 	.bigArrow {
-		height: 200px;
+		height: 150px;
 	}
 
 	.portfolio_list-link--item {
-		font-size: 70px;
+		font-size: 80px;
 	}
 
 	.about {
@@ -154,7 +154,7 @@
 	.opening {
 		&_head {
 			padding: 200px 0 0 30px;
-			font-size: 55px;
+			font-size: 70px;
 		}
 
 		&_img {
@@ -169,7 +169,7 @@
 
 			&-link {
 				&--item {
-					font-size: 50px;
+					font-size: 70px;
 					//transition: 0.2s ease-in-out;		
 				}
 
@@ -200,7 +200,14 @@
 
 	/*Big arrow section*/
 	.bigArrow {
-		padding: 100px 50px 0px 200px;
+		height: 200px;
+		padding: 50px 50px 100px 200px;		
+
+		&_img {
+			-webkit-animation: movingArrowDesktop 1s infinite;
+			animation: movingArrowDesktop 1s infinite;
+			animation-direction: alternate;
+		}
 	}
 
 	/*About section*/
@@ -210,20 +217,20 @@
 
 		&_head {
 			padding: 0 100px;
-			font-size: 50px;
+			font-size: 70px;
 		}
 
 		&_text {
 			width: 55%;
 			padding: 0px 100px;
-			font-size: 35px;
+			font-size: 50px;
 		}
 
-		&_rightLogo {
+		&_rightCircle {
 			display: block;
 			width: 40%;
 			position: absolute;
-			top: 15%;
+			top: 20%;
 			right: -20%;
 		}
 
@@ -280,11 +287,11 @@
 				padding: 100px 0 0 100px;
 
 				h3 {
-					font-size: 50px;
+					font-size: 70px;
 				}
 
 				p {
-					font-size: 35px;
+					font-size: 50px;
 					margin: 20px 0 0 250px;
 				}
 			}
@@ -330,7 +337,7 @@
 	.opening {
 		&_head {
 			padding: 250px 0 0 30px;
-			font-size: 70px;
+			font-size: 90px;
 		}
 	}
 
@@ -339,7 +346,7 @@
 		&_list {
 			&-link {
 				&--item {
-					font-size: 70px;
+					font-size: 90px;
 				}
 			}
 		}
@@ -350,7 +357,7 @@
 
 		&_head {
 			padding: 0 100px;
-			font-size: 70px;
+			font-size: 90px;
 		}
 
 		&_text {
@@ -373,11 +380,11 @@
 				width: 50%;
 
 				h3 {
-					font-size: 70px;
+					font-size: 90px;
 				}
 
 				p {
-					font-size: 50px;
+					font-size: 70px;
 					margin: 20px 0 0 400px;
 				}
 			}
@@ -410,7 +417,7 @@
 		&_list {
 			
 			&-item {
-				
+				padding: 100px 30px 0 120px;
 				&--link {
 					font-size: 25px;
 				}
@@ -418,19 +425,19 @@
 		}
 	
 		&_logo {
-			width: 140px;
+			width: 250px;
 		}
 	}
 
 	.opening {
 		&_head {
 			padding: 300px 0 0 30px;
-			font-size: 100px;
+			font-size: 120px;
 		}
 	}
 
 	.bigArrow {
-		height: 500px;
+		height: 450px;
 	}
 
 	/*Portfolio section*/
@@ -438,21 +445,17 @@
 		&_list {
 			&-link {
 				&--item {
-					font-size: 100px;
+					font-size: 120px;
 				}
 			}
 		}
-	}
-
-	.bigArrow {
-		height: 700px;
 	}
 
 	/*About section*/
 	.about {
 		margin: 400px 0 100px 0;
 		&_head {
-			font-size: 100px;
+			font-size: 120px;
 		}
 
 		&_photos {
@@ -472,7 +475,7 @@
 
 			&-txt {
 				h3 {
-					font-size: 100px;
+					font-size: 120px;
 				}
 			}
 		}
@@ -508,20 +511,16 @@
 			&-item {
 				
 				&--link {
-					font-size: 30px;
+					font-size: 35px;
 				}
 			}
-		}
-	
-		&_logo {
-			width: 150px;
 		}
 	}
 
 	.opening {
 		&_head {
 			padding: 350px 0 0 30px;
-			font-size: 140px;
+			font-size: 150px;
 		}
 
 		&_social {
@@ -532,12 +531,16 @@
 		}
 	}
 
+	.bigArrow {
+		height: 600px;
+	}
+
 	/*Portfolio section*/
 	.portfolio {
 		&_list {
 			&-link {
 				&--item {
-					font-size: 140px;
+					font-size: 150px;
 				}
 			}
 		}
@@ -566,7 +569,7 @@
 
 			&-txt {
 				h3 {
-					font-size: 140px;
+					font-size: 150px;
 				}
 
 				p {

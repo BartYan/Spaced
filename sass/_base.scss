@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'obviously_wide_semibold';
     background-color: $color_white;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -31,7 +31,7 @@ body {
 
     &_head {
         padding: 150px 0 0 10px;
-        font-family: 'Archivo Black', sans-serif;
+        font-family: 'obviously_wide_bold';
         font-size: 40px;
         text-align: left;
         z-index: 10;
@@ -66,14 +66,15 @@ body {
 /*Big arrow section*/
 .bigArrow {
     position: relative;
-    height: 80px;
+    height: 50px;
 
     &_img {
         width: 10%;
         position: absolute;
         left: 20%;
-        -webkit-animation: movingArrow 2s linear infinite;
-        animation: movingArrow 2s linear infinite;
+        -webkit-animation: movingArrowMobile 1s infinite;
+        animation: movingArrowMobile 1s infinite;
+        animation-direction: alternate;
     }
 }
 
@@ -99,8 +100,9 @@ body {
                 width: 100%;
                 //padding: 0px 100px;
                 padding: 25px 0 0 0;
-                font-family: 'Archivo Black', sans-serif;
-                font-size: 30px;
+                font-family: 'obviously_wide_bold';
+                font-size: 35px;
+                font-weight: bold;
                 color: black;
                 -webkit-text-fill-color: white;
                 -webkit-text-stroke-width: 1px;
@@ -131,7 +133,7 @@ body {
 
     &_head {
         margin: 0 0 50px 0;
-        font-family: 'Archivo Black', sans-serif;
+        font-family: 'obviously_wide_bold';
         font-size: 40px;
     }
 
@@ -140,7 +142,7 @@ body {
         font-size: 23px;
     }
 
-    &_rightLogo {
+    &_rightCircle {
         display: none;
     }
 
@@ -194,7 +196,7 @@ body {
             width: 100%;
 
             h3 {
-                font-family: 'Archivo Black', sans-serif;
+                font-family: 'obviously_wide_bold';
                 font-size: 40px;
             }
 

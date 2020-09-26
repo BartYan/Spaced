@@ -19,105 +19,91 @@
 }
 
 
-/*MOVING BIG ARROW */
-@-moz-keyframes movingArrow {
+/*MOVING BIG ARROW MOBILE*/
+@-moz-keyframes movingArrowMobile {
 
-	0%,
-	100% {
-		top: 0;
+	from {
+		transform: translate3d(0, 0, 0);
 	}
 
-	50% {
-		top: 50px;
-	}
-}
-
-@-ms-keyframes movingArrow {
-
-	0%,
-	100% {
-		top: 0;
-	}
-
-	50% {
-		top: 50px;
+	to {
+		transform: translate3d(0, 50px, 0);
 	}
 }
 
-@keyframes movingArrow {
-
-	0%,
-	100% {
-		top: 0;
+@-ms-keyframes movingArrowMobile {
+	from {
+		transform: translate3d(0, 0, 0);
 	}
 
-	50% {
-		top: 50px;
+	to {
+		transform: translate3d(0, 50px, 0);
 	}
 }
 
-@-webkit-keyframes movingArrow {
+@keyframes movingArrowMobile {
 
-	0%,
-	100% {
-		top: 0;
+	from {
+		transform: translate3d(0, 0, 0);
 	}
 
-	50% {
-		top: 50px;
+	to {
+		transform: translate3d(0, 50px, 0);
+	}
+}
+
+@-webkit-keyframes movingArrowMobile {
+
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+
+	to {
+		transform: translate3d(0, 50px, 0);
 	}
 }
 
 
-/*ANIMATION MEDIA QUERIES */
-@media (min-width: 2200px) {
+/*MOVING BIG ARROW DESKTOP*/
+@-moz-keyframes movingArrowDesktop {
 
-	/*MOVING BIG ARROW */
-	@-moz-keyframes movingArrow {
-
-		0%,
-		100% {
-			top: 0;
-		}
-
-		50% {
-			top: 100px;
-		}
+	from {
+		transform: translate3d(0, 0, 0);
 	}
 
-	@-ms-keyframes movingArrow {
+	to {
+		transform: translate3d(0, 100px, 0);
+	}
+}
 
-		0%,
-		100% {
-			top: 0;
-		}
-
-		50% {
-			top: 100px;
-		}
+@-ms-keyframes movingArrowDesktop {
+	from {
+		transform: translate3d(0, 0, 0);
 	}
 
-	@keyframes movingArrow {
+	to {
+		transform: translate3d(0, 100px, 0);
+	}
+}
 
-		0%,
-		100% {
-			top: 0;
-		}
+@keyframes movingArrowDesktop {
 
-		50% {
-			top: 100px;
-		}
+	from {
+		transform: translate3d(0, 0, 0);
 	}
 
-	@-webkit-keyframes movingArrow {
+	to {
+		transform: translate3d(0, 100px, 0);
+	}
+}
 
-		0%,
-		100% {
-			top: 0;
-		}
+@-webkit-keyframes movingArrowDesktop {
 
-		50% {
-			top: 100px;
-		}
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+
+	to {
+		transform: translate3d(0, 100px, 0);
 	}
 }
