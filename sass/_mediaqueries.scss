@@ -228,10 +228,10 @@
 
 		&_rightCircle {
 			display: block;
-			width: 40%;
+			width: 30%;
 			position: absolute;
 			top: 20%;
-			right: -20%;
+			right: -15%;
 		}
 
 		&_photos {
@@ -308,12 +308,12 @@
 
 		&_bottom {
 
-			&-logo {
+			&-circle {
 				display: block;
-				width: 40%;
+				width: 30%;
 				position: absolute;
-				top: -100px;
-				left: -20%;
+				top: -200px;
+				left: -15%;
 			}
 		}
 	}
@@ -321,7 +321,7 @@
 
 	/*Footer section*/
 	.footer {
-		margin: 400px 0 0 0;
+		margin: 250px 0 0 0;
 		font-size: 35px;
 
 		&_nav {
@@ -405,7 +405,7 @@
 
 	/*Footer section*/
 	.footer {
-		margin: 600px 0 0 0;
+		margin: 300px 0 0 0;
 	}
 }
 
@@ -496,7 +496,7 @@
 
 	/*Footer section*/
 	.footer {
-		margin: 600px 0 0 0;
+		margin: 400px 0 0 0;
 	}
 }
 
@@ -595,7 +595,7 @@
 
 	/*Footer section*/
 	.footer {
-		margin: 800px 0 0 0;
+		margin: 500px 0 0 0;
 	}
 }
 

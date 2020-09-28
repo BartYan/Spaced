@@ -23,6 +23,7 @@
 				color: #000;
 				transition: 0.1s;
 			}
+
 			&--link:hover {
 				color: $color_red;
 			}
@@ -30,7 +31,31 @@
 	}
 
 	&_logo {
-		width:70px;
+		position: relative;
+		width: 70px;
+
+		&-syg {
+			position: absolute;
+		}
+
+		&-txt {
+			position: absolute;
+			//Rotate effect
+			-webkit-transition-duration: 1s;
+			-moz-transition-duration: 1s;
+			-o-transition-duration: 1s;
+			transition-duration: 1s;
+			-webkit-transition-property: -webkit-transform;
+			-moz-transition-property: -moz-transform;
+			-o-transition-property: -o-transform;
+			transition-property: transform;
+			overflow: hidden;
+		}
+
+		&-txt:hover {
+			cursor: pointer;
+			transform: rotate(360deg);
+		}
 	}
 
 	/*mobile hamburger & overlay menu*/
