@@ -28,6 +28,7 @@ overlayLink.forEach(item => {
     bar[0].style.cssText = "background-color: #000; transform: none";
     bar[1].style.transform = "scale(1)";
     bar[2].style.cssText = "background-color: #000; transform: none";
+    active = false;
   })
 })
 
