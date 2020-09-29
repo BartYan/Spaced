@@ -4,7 +4,8 @@
 	width: 100%;
 	height: 80px;
 	display: flex;
-	//justify-content: space-between;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
 	z-index: 99;
 	background-color: $color_white;
 	font-family: 'obviously_wide_bold';
@@ -86,7 +87,7 @@
 		z-index: 9;
 		left: 0;
 		top: 0;
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(237, 55, 46, 0.9);
 		-webkit-animation: fadeIn 0.5s;
 		animation: fadeIn 0.5s;
 
@@ -96,15 +97,14 @@
 			top: 50%;
 			transform: translate(-50%, -50%);
 			text-align: center;
-		}
-
-		a {
-			padding: 8px;
-			text-decoration: none;
-			font-size: 36px;
-			color: #fff;
-			display: block;
-			transition: 0.3s;
+			&--link {
+				padding: 8px;
+				text-decoration: none;
+				font-size: 36px;
+				color: $color_white;
+				display: block;
+				transition: 0.3s;
+			}
 		}
 	}
 }
