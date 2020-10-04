@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'obviously_wide_semibold';
+    font-family: 'obviously_wide_regular';
     background-color: $color_white;
     box-sizing: border-box;
     overflow-x: hidden;
@@ -13,6 +13,10 @@ body {
 
 .color_red {
     color: $color_red !important;
+}
+
+.color_white {
+    color: $color_white !important;
 }
 
 @mixin center {
@@ -30,7 +34,7 @@ body {
     height: 100vh;
 
     &_head {
-        padding: 80px 0 0 10px;
+        padding: 80px 0 0 5px;
         font-family: 'obviously_wide_bold';
         font-size: 25px;
         text-align: left;
@@ -53,8 +57,7 @@ body {
         &-icon {
             display: block;
             width: 20px;
-            padding: 10px 30px;
-            transition: 0.1s;
+            padding: 10px 10px;
         }
 
         &-icon:hover {
@@ -132,13 +135,14 @@ body {
     width: 100%;
 
     &_head {
-        margin: 0 0 50px 0;
+        margin: 0 0 50px 5px;
         font-family: 'obviously_wide_bold';
         font-size: 25px;
     }
 
     &_text {
         width: 95%;
+        margin: 0 0 0 5px;
         font-size: 16px;
     }
 
@@ -151,9 +155,10 @@ body {
 
         &-logo {
             position: absolute;
-            top: 70%;
-            width: 200px;
-            height: 200px;
+            top: 90%;
+            left: 10%;
+            width: 100px;
+            height: 100px;
             z-index: 7;
 
             &--syg {
@@ -190,7 +195,7 @@ body {
 /*Contact section*/
 .contact {
     width: 100%;
-    margin: 200px 0 50px 0;
+    margin: 150px 0 50px 0;
 
     &_top {
         display: flex;
@@ -202,11 +207,13 @@ body {
 
             h3 {
                 font-family: 'obviously_wide_bold';
+                margin: 0 0 0 5px;
                 font-size: 25px;
             }
 
             p {
                 font-size: 20px;
+                margin: 0 0 0 5px;
             }
         }
 
@@ -245,6 +252,7 @@ body {
                 p {
                     @include center;
                     text-align: center;
+                    font-family: obviously_wide_semibold;
                 }
             }
         }
@@ -255,16 +263,16 @@ body {
 /*Footer section*/
 .footer {
     margin: 100px 0 0 0;
-    background-color: #F2F0E7;
-    font-size: 1rem;
+    background-color: #000;
+    font-size: 13px;
     z-index: 11;
 
     &_nav {
-        padding: 50px 150px 50px 20px;
+        padding: 50px 150px 50px 5px;
 
         &-link {
             text-decoration: none;
-            color: #000;
+            color: $color_white;
 
             &--item {
                 padding: 15px 0;
@@ -278,7 +286,7 @@ body {
 
         &-item {
             width: 20px;
-            padding: 0 20px 0 0;
+            padding: 0 30px 0 0;
         }
     }
 }
