@@ -162,8 +162,10 @@
 @media (min-width: 1200px) {
 	/*top nav section*/
 	.nav {
-		position: absolute;
+		position: fixed;
 		height: auto;
+		transition: top 1s;
+		top: 0;
 
 		&_hamburger {
 			display: none;
@@ -185,13 +187,16 @@
 			width: 105px;
 			padding: 30px 30px 0 0;
 			margin: 0;
+			transition: 1s;
 
 			&-syg {
 				width: 105px;
+				transition: width 1s;
 			}
 
 			&-txt {
 				width: 105px;
+				transition: width 1s;
 			}
 		}
 	}

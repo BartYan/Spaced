@@ -10,6 +10,7 @@
 	background-color: $color_white;
 	font-family: 'obviously_wide_semibold';
 	font-weight: bold;
+	transition: top 1s;
 
 	&_list {
 		display: none; //flex;
