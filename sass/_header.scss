@@ -35,14 +35,16 @@
 	&_logo {
 		position: relative;
 		width: 50px;
-		margin: 15px 15px 0 0;
+		padding: 10px 10px 0 0;
 
 		&-syg {
 			position: absolute;
+			width: 50px;
 		}
 
 		&-txt {
 			position: absolute;
+			width: 50px;
 			//Rotate effect with transform on hover
 			/*-webkit-transition-duration: 1s;
 			-moz-transition-duration: 1s;

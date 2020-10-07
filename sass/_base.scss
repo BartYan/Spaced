@@ -83,7 +83,6 @@ body {
 
 /*Portfolio section*/
 .portfolio {
-
     display: block;
     position: relative;
     width: 100%;
@@ -98,7 +97,8 @@ body {
             width: 100%;
             text-decoration: none;
             border: none;
-
+            z-index: 100 !important;
+            
             &--item {
                 width: 100%;
                 //padding: 0px 100px;
@@ -110,21 +110,13 @@ body {
                 -webkit-text-fill-color: $color_white;
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: black;
-                z-index: 5;
+                z-index: 100 !important;
             }
 
             &--item:hover {
                 -webkit-text-fill-color: black;
             }
         }
-    }
-
-    &_imgSm {
-        display: none;
-    }
-
-    &_imgLg {
-        display: none;
     }
 }
 

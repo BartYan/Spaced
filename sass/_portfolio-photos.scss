@@ -1,0 +1,32 @@
+//DISPLAY NONE - SHOW ONLY ON PORTFOLIO LIST HOVER
+.portfolio {
+    &_photos {
+        height: 100%;
+    }
+}
+
+//arrangement of individual photos in a portfolio
+ .photosBox_one {
+    opacity: 0;
+    transition: 0.7s;
+    z-index: -5 !important;
+    &-sm {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        width: 20%;
+        z-index: -1 !important;
+    }
+
+    &-lg {
+        position: absolute;
+        bottom: 0;
+        right: 15%;
+        width: 35%;
+        z-index: -2 !important;
+    }
+}
+/*
+.hover-one:hover + .photosBox_one {
+    opacity: 1;
+}*/
