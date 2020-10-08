@@ -2,14 +2,14 @@
 .portfolio {
     &_photos {
         height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.7s;
     }
 }
 
 //arrangement of individual photos in a portfolio
  .photosBox_one {
-    opacity: 0;
-    transition: 0.7s;
-    z-index: -5 !important;
     &-sm {
         position: absolute;
         top: 0;
@@ -26,6 +26,8 @@
         z-index: -2 !important;
     }
 }
+
+
 /*
 .hover-one:hover + .photosBox_one {
     opacity: 1;

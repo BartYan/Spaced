@@ -97,9 +97,10 @@ body {
             width: 100%;
             text-decoration: none;
             border: none;
-            z-index: 100 !important;
+ 
             
             &--item {
+                position: relative;
                 width: 100%;
                 //padding: 0px 100px;
                 padding: 25px 0 0 0;
@@ -110,7 +111,7 @@ body {
                 -webkit-text-fill-color: $color_white;
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: black;
-                z-index: 100 !important;
+                z-index: 5;
             }
 
             &--item:hover {
