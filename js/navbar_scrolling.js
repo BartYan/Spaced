@@ -19,7 +19,10 @@ window.onscroll = () => {
     document.querySelectorAll('.nav_list-item--link').forEach(element => {
       element.style.cssText = "font-size: 10px;";
     });
-  } if (window.scrollY == 0 & window.innerWidth >= 1200) {
+  } 
+  
+  if (window.scrollY == 0 & window.innerWidth >= 1200) {
+    document.querySelector('.nav').style.top = "0";
     //logo styles
     document.querySelector('.nav_logo').style.cssText = "width: 105px; padding: 30px 30px 0 0;";
     document.querySelector('.nav_logo-syg').style.cssText = "width: 105;";
