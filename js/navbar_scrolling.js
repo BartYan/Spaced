@@ -4,7 +4,7 @@ Scrolls up = show the navbar & logo is bigger*/
 let prevScrollpos = window.pageYOffset;
 window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos > currentScrollPos && window.scrollY == 0) {
     document.querySelector('.nav').style.top = "0";
   } else {
     document.querySelector('.nav').style.top = "-100px";
