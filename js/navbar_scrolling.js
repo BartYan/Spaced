@@ -21,7 +21,7 @@ window.onscroll = () => {
     });
   } 
   
-  if (window.scrollY == 0 & window.innerWidth >= 1200) {
+  if (window.pageYOffset == 0 & window.innerWidth >= 1200) {
     document.querySelector('.nav').style.top = "0";
     //logo styles
     document.querySelector('.nav_logo').style.cssText = "width: 105px; padding: 30px 30px 0 0;";
