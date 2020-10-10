@@ -8,22 +8,23 @@
 	-webkit-justify-content: space-between;
 	z-index: 99;
 	background-color: $color_white;
-	font-family: 'obviously_wide_semibold';
-	font-weight: bold;
+	//font-family: 'obviously_wide_semibold';
+	//font-weight: bold;
 	transition: top 1s;
 
 	&_list {
-		display: none; //flex;
+		display: none; //desktop flex;
 
 		&-item {
 			display: block;
 			padding: 50px 10px 0 90px;
+			transition: 1s, color 0.1s;
 
 			&--link {
 				text-decoration: none;
 				border: none;
 				color: #000;
-				transition: 0.1s;
+				transition: 1s, color 0.1s;
 			}
 
 			&--link:hover {
