@@ -1,30 +1,34 @@
+(() => {
 
-(function(){
+  const doc = document.documentElement;
+  const w = window;
+  let f = false;
 
-  var doc = document.documentElement;
-  var w = window;
+  let prevScroll = w.scrollY || doc.scrollTop;
+  let curScroll;
+  let direction = 0;
+  let prevDirection = 0;
 
-  var prevScroll = w.scrollY || doc.scrollTop;
-  var curScroll;
-  var direction = 0;
-  var prevDirection = 0;
+  const header = document.querySelector('.nav');
+  const logo = document.querySelector('.nav_logo');
+  const logoSyg = document.querySelector('.nav_logo-syg');
+  const logoTxt = document.querySelector('.nav_logo-txt');
+  const menuItem = document.querySelectorAll('.nav_list-item');
+  const menuLink = document.querySelectorAll('.nav_list-item--link');
 
-  var header = document.querySelector('.nav');
-  //var logo = document.querySelector('.nav_logo');
 
-  var checkScroll = function() {
+  const checkScroll = () => {
 
     /*
-    ** Find the direction of scroll
-    ** 0 - initial, 1 - up, 2 - down
-    */
+     ** Find the direction of scroll
+     ** 0 - initial, 1 - up, 2 - down
+     */
 
     curScroll = w.scrollY || doc.scrollTop;
-    if (curScroll > prevScroll) { 
+    if (curScroll > prevScroll) {
       //scrolled up
       direction = 2;
-    }
-    else if (curScroll < prevScroll) { 
+    } else if (curScroll < prevScroll) {
       //scrolled down
       direction = 1;
     }
@@ -32,176 +36,54 @@
     if (direction !== prevDirection) {
       toggleHeader(direction, curScroll);
     }
-    
+
+    //Do if toggleHeader is done.
+    if (window.scrollY === 0 && f == true) {
+      header.classList.remove('hide');
+      //logo styles
+      logo.classList.remove('scroll-logo');
+      logoSyg.classList.remove('scroll-logoSyg');
+      logoTxt.classList.remove('scroll-logoTxt');
+      //menu links styles
+      menuItem.forEach(el => {
+        el.classList.remove("scroll-menuItem")
+      });
+      menuLink.forEach(el => {
+        el.classList.remove("scroll-menuLink")
+      });
+      f = false;
+    } 
+
     prevScroll = curScroll;
   };
 
-  var toggleHeader = function(direction, curScroll) {
-    if (direction === 2 && curScroll > 52) { 
-      
+  const toggleHeader = (direction, curScroll) => {
+    if (direction === 2 && curScroll > 52) {
+
       //replace 52 with the height of your header in px
 
+      //To find below classes in css go to _header.scss & _mediaqueries.scss (width 1200px).
       header.classList.add('hide');
+      //logo styles
+      logo.classList.add('scroll-logo');
+      logoSyg.classList.add('scroll-logoSyg');
+      logoTxt.classList.add('scroll-logoTxt');
+      //menu links styles
+      menuItem.forEach(el => {
+        el.classList.add("scroll-menuItem")
+      });
+      menuLink.forEach(el => {
+        el.classList.add("scroll-menuLink")
+      });
+      f = true;
       prevDirection = direction;
-    }
-    else if (direction === 1) {
+    } else if (direction === 1) {
       header.classList.remove('hide');
-      
+      f = true;
       prevDirection = direction;
     }
   };
-  
+
   window.addEventListener('scroll', checkScroll);
 
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*let prevScrollpos = window.pageYOffset;
-
-const menu = () => {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector('.nav').style.top = "0";
-  } else {
-    document.querySelector('.nav').style.top = "-100px";
-    //logo styles
-    document.querySelector('.nav_logo').style.cssText = "width: 50px; padding: 10px 10px 0 0;";
-    document.querySelector('.nav_logo-syg').style.cssText = "width: 50px;";
-    document.querySelector('.nav_logo-txt').style.cssText = "width: 50px;";
-    //menu links styles
-    document.querySelectorAll('.nav_list-item').forEach(element => {
-      element.style.cssText = "padding: 12px 5px 20px 50px;";
-    });
-    document.querySelectorAll('.nav_list-item--link').forEach(element => {
-      element.style.cssText = "font-size: 10px;";
-    });
-  }/*
-  if (currentScrollPos == 0 && window.innerWidth >= 1200) {
-    document.querySelector('.nav').style.top = "0";
-    //logo styles
-    document.querySelector('.nav_logo').style.cssText = "width: 105px; padding: 30px 30px 0 0;";
-    document.querySelector('.nav_logo-syg').style.cssText = "width: 105;";
-    document.querySelector('.nav_logo-txt').style.cssText = "width: 105;";
-    //menu links styles
-    document.querySelectorAll('.nav_list-item').forEach(element => {
-      element.style.cssText = "padding: 25px 5px 0 50px;";
-    });
-    document.querySelectorAll('.nav_list-item--link').forEach(element => {
-      element.style.cssText = "font-size: 12px;";
-    }); 
-  prevScrollpos = currentScrollPos;
-
-  
-}
-
-window.addEventListener("scroll", menu);
-
-
-/*
-function bringmenu() {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-      document.querySelector('.nav').style.top = "-100px";
-      //logo styles
-    document.querySelector('.nav_logo').style.cssText = "width: 50px; padding: 10px 10px 0 0;";
-    document.querySelector('.nav_logo-syg').style.cssText = "width: 50px;";
-    document.querySelector('.nav_logo-txt').style.cssText = "width: 50px;";
-    //menu links styles
-    document.querySelectorAll('.nav_list-item').forEach(element => {
-      element.style.cssText = "padding: 12px 5px 20px 50px;";
-    });
-    document.querySelectorAll('.nav_list-item--link').forEach(element => {
-      element.style.cssText = "font-size: 10px;";
-    });
-    } else {
-      document.querySelector('.nav').style.top = "0";
-    }
-}
-window.addEventListener("scroll", bringmenu);
-/*
-let prevScrollpos = window.pageYOffset;
-window.onscroll = () => {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector('.nav').style.top = "0";
-   } else {
-    document.querySelector('.nav').style.top = "-100px";
-    //logo styles
-    document.querySelector('.nav_logo').style.cssText = "width: 50px; padding: 10px 10px 0 0;";
-    document.querySelector('.nav_logo-syg').style.cssText = "width: 50px;";
-    document.querySelector('.nav_logo-txt').style.cssText = "width: 50px;";
-    //menu links styles
-    document.querySelectorAll('.nav_list-item').forEach(element => {
-      element.style.cssText = "padding: 12px 5px 20px 50px;";
-    });
-    document.querySelectorAll('.nav_list-item--link').forEach(element => {
-      element.style.cssText = "font-size: 10px;";
-    });
-  }
-
-  if (window.scrollY == 0) { 
-    //logo styles
-  document.querySelector('.nav_logo').style.cssText = "width: 105px; padding: 30px 30px 0 0;";
-  document.querySelector('.nav_logo-syg').style.cssText = "width: 105;";
-  document.querySelector('.nav_logo-txt').style.cssText = "width: 105;";
-  //menu links styles
-  document.querySelectorAll('.nav_list-item').forEach(element => {
-    element.style.cssText = "padding: 25px 5px 0 50px;";
-  });
-  document.querySelectorAll('.nav_list-item--link').forEach(element => {
-    element.style.cssText = "font-size: 12px;";
-  });
- }
-  prevScrollpos = currentScrollPos;
-}
-
-/* Scrolls down = hide the navbar & logo is smaller when scrolling. 
-Scrolls up = show the navbar & logo is bigger*/
-/*
-let prevScrollpos = window.pageYOffset;
-window.onscroll = () => {
-  let currentScrollPos = window.pageYOffset;
-  if ((prevScrollpos > currentScrollPos) || window.scrollY == 0) {
-    document.querySelector('.nav').style.top = "0";
-  } else if (window.pageYOffset == 0 && window.innerWidth >= 1200) {
-    document.querySelector('.nav').style.top = "0";
-    //logo styles
-    document.querySelector('.nav_logo').style.cssText = "width: 105px; padding: 30px 30px 0 0;";
-    document.querySelector('.nav_logo-syg').style.cssText = "width: 105;";
-    document.querySelector('.nav_logo-txt').style.cssText = "width: 105;";
-    //menu links styles
-    document.querySelectorAll('.nav_list-item').forEach(element => {
-      element.style.cssText = "padding: 25px 5px 0 50px;";
-    });
-    document.querySelectorAll('.nav_list-item--link').forEach(element => {
-      element.style.cssText = "font-size: 12px;";
-    });
-   }
-   else {
-    document.querySelector('.nav').style.top = "-100px";
-    //logo styles
-    document.querySelector('.nav_logo').style.cssText = "width: 50px; padding: 10px 10px 0 0;";
-    document.querySelector('.nav_logo-syg').style.cssText = "width: 50px;";
-    document.querySelector('.nav_logo-txt').style.cssText = "width: 50px;";
-    //menu links styles
-    document.querySelectorAll('.nav_list-item').forEach(element => {
-      element.style.cssText = "padding: 12px 5px 20px 50px;";
-    });
-    document.querySelectorAll('.nav_list-item--link').forEach(element => {
-      element.style.cssText = "font-size: 10px;";
-    });
-  }
-  prevScrollpos = currentScrollPos;
-}*/

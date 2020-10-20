@@ -130,3 +130,8 @@
 	animation: rotating 2s 1;
 	/* IE 10+, Fx 29+ */
 }
+
+/*navbar hide-show scrolling classes - using in nabar_scrolling.js*/
+.nav.hide {
+	top: -150px;
+}

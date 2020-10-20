@@ -160,6 +160,28 @@
 }
 
 @media (min-width: 1200px) {
+	/*navbar hide-show scrolling classes - using in nabar_scrolling.js*/
+	.nav.hide {
+		top: -150px;
+	}
+	
+	.nav_logo.scroll-logo {
+		width: 40px;
+		margin: -25px -25px 0 0;
+	}
+
+	.nav_logo-syg.scroll-logoSyg {
+		width: 40px;
+	}
+	.nav_logo-txt.scroll-logoTxt {
+		width: 40px;
+	}
+	.nav_list-item.scroll-menuItem {
+		margin: -20px 0 0 0;
+	}
+	.nav_list-item--link.scroll-menuLink {
+		font-size: 10px;
+	}
 
 	/*top nav section*/
 	.nav {
@@ -176,7 +198,7 @@
 			display: flex;
 
 			&-item {
-				padding: 25px 5px 0 50px;
+				padding: 25px 5px 15px 50px;
 
 				&--link {
 					font-size: 12px;
@@ -200,15 +222,6 @@
 				transition: width 1s;
 			}
 		}
-	}
-
-	.nav.hide {
-		top: -150px;
-	}
-	
-	.scroll-logo {
-		width: 50px;
-		padding: 10px 10px 0 0;
 	}
 
 	/*Big arrow section*/
