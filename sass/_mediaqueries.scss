@@ -160,11 +160,12 @@
 }
 
 @media (min-width: 1200px) {
+
 	/*navbar hide-show scrolling classes - using in nabar_scrolling.js*/
 	.nav.hide {
 		top: -150px;
 	}
-	
+
 	.nav_logo.scroll-logo {
 		width: 40px;
 		margin: -25px -25px 0 0;
@@ -173,14 +174,17 @@
 	.nav_logo-syg.scroll-logoSyg {
 		width: 40px;
 	}
+
 	.nav_logo-txt.scroll-logoTxt {
 		width: 40px;
 	}
+
 	.nav_list-item.scroll-menuItem {
 		margin: -20px 0 0 0;
 	}
+
 	.nav_list-item--link.scroll-menuLink {
-		font-size: 10px;
+		font-size: 8px;
 	}
 
 	/*top nav section*/
@@ -201,7 +205,7 @@
 				padding: 25px 5px 15px 50px;
 
 				&--link {
-					font-size: 12px;
+					font-size: 10px;
 				}
 			}
 		}
@@ -254,6 +258,10 @@
 				}*/
 			}
 		}
+
+		&_photos {
+			visibility: visible;
+		}
 	}
 
 	/*About section*/
@@ -287,13 +295,13 @@
 				width: 120px;
 				height: 120px;
 				top: 30%;
-				left: 10%;
+				left: 15%;
 			}
 
 			&-one {
 				position: absolute;
 				top: 15%;
-				left: 30%;
+				left: 35%;
 				width: 20%;
 				margin: 0;
 				z-index: 6;
@@ -304,7 +312,7 @@
 				width: 25%;
 				position: absolute;
 				bottom: 20%;
-				left: 45%;
+				left: 50%;
 				z-index: 5;
 			}
 
@@ -312,7 +320,7 @@
 				display: block;
 				position: absolute;
 				bottom: 18%;
-				left: 20%;
+				left: 25%;
 				width: 15%;
 				z-index: 9;
 			}
@@ -368,6 +376,11 @@
 	/*Footer section*/
 	.footer {
 		margin: 250px 0 0 0;
+
+		&_box {
+			display: flex;
+			padding: 0;
+		}
 
 		&_nav {
 			padding: 50px 100px 150px 100px;
@@ -464,14 +477,32 @@
 }
 
 @media (min-width: 2200px) {
+
+	//navbar hide-show scrolling classes - using in nabar_scrolling.js*/
+	.nav_list-item--link.scroll-menuLink {
+		font-size: 15px;
+	}
+
+	.nav_logo.scroll-logo {
+		width: 60px;
+	}
+
+	.nav_logo-syg.scroll-logoSyg {
+		width: 60px;
+	}
+
+	.nav_logo-txt.scroll-logoTxt {
+		width: 60px;
+	}
+
 	.nav {
 		&_list {
 
 			&-item {
-				padding: 60px 30px 0 70px;
+				padding: 40px 30px 30px 70px;
 
 				&--link {
-					font-size: 20px;
+					font-size: 18px;
 				}
 			}
 		}
@@ -566,6 +597,23 @@
 }
 
 @media (min-width: 2800px) {
+
+	//navbar hide-show scrolling classes - using in nabar_scrolling.js*/
+	.nav_list-item--link.scroll-menuLink {
+		font-size: 20px;
+	}
+
+	.nav_logo.scroll-logo {
+		width: 70px;
+	}
+
+	.nav_logo-syg.scroll-logoSyg {
+		width: 70px;
+	}
+
+	.nav_logo-txt.scroll-logoTxt {
+		width: 70px;
+	}
 
 	.nav {
 		&_list {

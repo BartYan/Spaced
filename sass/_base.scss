@@ -119,6 +119,10 @@ body {
             }
         }
     }
+    //photos visible only on desktop (1200px) check out portfolio_hover-photos.js
+    &_photos {
+        visibility: hidden;
+    }
 }
 
 /*About section*/
@@ -260,8 +264,12 @@ body {
     font-size: 10px;
     z-index: 11;
 
+    &_box {
+        padding: 25px 0 25px 0;
+    }
+
     &_nav {
-        padding: 50px 150px 50px 5px;
+        padding: 0 0 0 5px;
 
         &-link {
             text-decoration: none;
