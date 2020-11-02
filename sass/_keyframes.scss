@@ -1,59 +1,98 @@
+/*FADE IN MENU OVERLAY*/
 @-webkit-keyframes fadeIn {
-	from {
+	0% {
 		opacity: 0;
 	}
 
-	to {
+	100% {
 		opacity: 1;
 	}
 }
 
-@keyframes fadeIn {
-	from {
+@-moz-keyframes fadeIn {
+	0% {
 		opacity: 0;
 	}
 
-	to {
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes  fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
 		opacity: 1;
 	}
 }
 
 
 /*MOVING BIG ARROW MOBILE*/
-@-moz-keyframes movingArrowMobile {
-
+@-webkit-keyframes movingArrowMobile {
 	from {
-		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
 	}
 
 	to {
-		transform: translate3d(0, 50px, 0);
+		-webkit-transform: translate3d(0, 50px, 0);
+	}
+}
+
+@-moz-keyframes movingArrowMobile {
+	from {
+		-moz-transform: translate3d(0, 0, 0);
+	}
+
+	to {
+		-moz-transform: translate3d(0, 50px, 0);
 	}
 }
 
 @-ms-keyframes movingArrowMobile {
 	from {
-		transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
 	}
 
 	to {
-		transform: translate3d(0, 50px, 0);
+		-ms-transform: translate3d(0, 50px, 0);
 	}
 }
+
+@-o-keyframes movingArrowMobile {
+	from {
+		-o-transform: translate3d(0, 0, 0);
+	}
+
+	to {
+		-o-transform: translate3d(0, 50px, 0);
+	}
+  }
 
 @keyframes movingArrowMobile {
-
-	from {
-		transform: translate3d(0, 0, 0);
-	}
-
-	to {
-		transform: translate3d(0, 50px, 0);
-	}
-}
-
-@-webkit-keyframes movingArrowMobile {
-
 	from {
 		transform: translate3d(0, 0, 0);
 	}
@@ -66,25 +105,34 @@
 
 /*MOVING BIG ARROW DESKTOP*/
 @-moz-keyframes movingArrowDesktop {
-
 	from {
-		transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
 	}
 
 	to {
-		transform: translate3d(0, 100px, 0);
+		-moz-transform: translate3d(0, 100px, 0);
 	}
 }
 
 @-ms-keyframes movingArrowDesktop {
 	from {
-		transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
 	}
 
 	to {
-		transform: translate3d(0, 100px, 0);
+		-ms-transform: translate3d(0, 100px, 0);
 	}
 }
+
+@-o-keyframes movingArrowDesktop {
+	from {
+		-o-transform: translate3d(0, 0, 0);
+	}
+
+	to {
+		-o-transform: translate3d(0, 100px, 0);
+	}
+  }
 
 @keyframes movingArrowDesktop {
 
@@ -100,17 +148,71 @@
 @-webkit-keyframes movingArrowDesktop {
 
 	from {
-		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
 	}
 
 	to {
-		transform: translate3d(0, 100px, 0);
+		-webkit-transform: translate3d(0, 100px, 0);
 	}
 }
 
 
 //ROTATE LOGO ABOUT SECTION
+
 @-webkit-keyframes rotating {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+@-moz-keyframes rotating {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+
+	to {
+		-moz-transform: rotate(-360deg);
+	}
+}
+
+@-o-keyframes rotating {
+	from {
+		-o-transform: rotate(0deg);
+	}
+
+	to {
+		-o-transform: rotate(-360deg);
+	}
+}
+
+@-ms-keyframes rotating {
+	from {
+		-ms-transform: rotate(0deg);
+	}
+
+	to {
+		-ms-transform: rotate(-360deg);
+	}
+}
+
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(-360deg);
+	}
+}
+
+
+/*
+  @-webkit-keyframes rotating {
 	from {
 	  -webkit-transform: rotate(0deg);
 	  -o-transform: rotate(0deg);
@@ -137,4 +239,4 @@
 	  -o-transform: rotate(-360deg);
 	  transform: rotate(-360deg);
 	}
-  }
+  }*/

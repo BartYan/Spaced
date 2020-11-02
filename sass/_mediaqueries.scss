@@ -235,7 +235,15 @@
 
 		&_img {
 			-webkit-animation: movingArrowDesktop 1s infinite;
+			/* Safari 4+ */
+			-moz-animation: movingArrowDesktop 1s infinite;
+			/* Fx 5+ */
+			-o-animation: movingArrowDesktop 1s infinite;
+			/* Opera 12+ */
+			-ms-animation: movingArrowDesktop 1s infinite;
+			/*IE11 & Microsoft Edge*/
 			animation: movingArrowDesktop 1s infinite;
+			/* IE 10+, Fx 29+ */
 			animation-direction: alternate;
 		}
 	}

@@ -24,6 +24,14 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    /* Safari 4+ */
+    -moz-transform: translate(-50%, -50%);
+    /* Fx 5+ */
+    -o-transform: translate(-50%, -50%);
+    /* Opera 12+ */
+    -ms-transform: translate(-50%, -50%);
+    /*IE11 & Microsoft Edge*/
     transform: translate(-50%, -50%);
 }
 
@@ -76,7 +84,15 @@ body {
         position: absolute;
         left: 20%;
         -webkit-animation: movingArrowMobile 1s infinite;
+        /* Safari 4+ */
+        -moz-animation: movingArrowMobile 1s infinite;
+        /* Fx 5+ */
+        -o-animation: movingArrowMobile 1s infinite;
+        /* Opera 12+ */
+        -ms-animation: movingArrowMobile 1s infinite;
+        /*IE11 and Microsoft Edge*/
         animation: movingArrowMobile 1s infinite;
+        /* IE 10+, Fx 29+ */
         animation-direction: alternate;
     }
 }
@@ -97,8 +113,8 @@ body {
             width: 100%;
             text-decoration: none;
             border: none;
- 
-            
+
+
             &--item {
                 position: relative;
                 width: 100%;
@@ -119,6 +135,7 @@ body {
             }
         }
     }
+
     //photos visible only on desktop (1200px) check out portfolio_hover-photos.js
     &_photos {
         visibility: hidden;
