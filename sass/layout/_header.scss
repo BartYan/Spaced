@@ -127,6 +127,12 @@
 				color: $color_white;
 				display: block;
 				transition: 0.3s;
+				@media (min-width: 768px) {
+					font-size: 50px;
+				}
+				@media (min-width: 1024px) {
+					font-size: 60px;
+				}
 			}
 		}
 	}
@@ -154,4 +160,32 @@
 /*navbar hide-show scrolling classes - using in nabar_scrolling.js*/
 .nav.hide {
 	top: -150px;
+	@media (min-width: 1200px) {
+
+	}
+}
+
+/*navbar hide-show scrolling classes - using in navbar_scrolling.js*/
+@media (min-width: 1200px) {
+
+	.nav_logo.scroll-logo {
+		width: 40px;
+		margin: -25px -25px 0 0;
+	}
+
+	.nav_logo-syg.scroll-logoSyg {
+		width: 40px;
+	}
+
+	.nav_logo-txt.scroll-logoTxt {
+		width: 40px;
+	}
+
+	.nav_list-item.scroll-menuItem {
+		margin: -20px 0 0 0;
+	}
+
+	.nav_list-item--link.scroll-menuLink {
+		font-size: 8px;
+	}
 }

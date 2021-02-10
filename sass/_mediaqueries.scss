@@ -1,191 +1,191 @@
 /*MEDIA QUERIES*/
 @media (min-width: 768px) {
-	.nav_overlay-content a {
-		font-size: 50px;
-	}
+	// .nav_overlay-content a {
+	// 	font-size: 50px;
+	// }
 
 	/*Welcome/opening section*/
-	.opening {
-		&_head {
-			padding: 250px 0 0 30px;
-			font-size: 50px;
-		}
+	// .opening {
+	// 	&_head {
+	// 		padding: 250px 0 0 30px;
+	// 		font-size: 50px;
+	// 	}
 
-		&_img {
-			width: 30%;
-		}
+	// 	&_img {
+	// 		width: 30%;
+	// 	}
 
 
-		&_social {
-			&-icon {
-				width: 30px;
-				padding: 10px 50px;
-			}
-		}
-	}
+	// 	&_social {
+	// 		&-icon {
+	// 			width: 30px;
+	// 			padding: 10px 50px;
+	// 		}
+	// 	}
+	// }
 
-	.bigArrow {
-		height: 150px;
-	}
+	// .bigArrow {
+	// 	height: 150px;
+	// }
 
-	.portfolio_list-link--item {
-		font-size: 30px;
-	}
+	// .portfolio_list-link--item {
+	// 	font-size: 30px;
+	// }
 
-	.about {
-		margin: 200px 0 100px 0;
+	// .about {
+	// 	margin: 200px 0 100px 0;
 
-		&_head {
-			margin: 0 0 100px 0;
-			font-size: 30px;
-		}
+	// 	&_head {
+	// 		margin: 0 0 100px 0;
+	// 		font-size: 30px;
+	// 	}
 
-		&_text {
-			font-size: 20px;
-		}
+	// 	&_text {
+	// 		font-size: 20px;
+	// 	}
 
-		&_photos {
-			&-logo {
-				width: 300px;
-				height: 300px;
-				top: 85%;
-			}
+	// 	&_photos {
+	// 		&-logo {
+	// 			width: 300px;
+	// 			height: 300px;
+	// 			top: 85%;
+	// 		}
 
-			&-one {
-				width: 60%;
-				margin: 100px auto 100px auto;
-			}
-		}
-	}
+	// 		&-one {
+	// 			width: 60%;
+	// 			margin: 100px auto 100px auto;
+	// 		}
+	// 	}
+	// }
 
-	.contact {
-		margin: 300px 0 100px 0;
+	// .contact {
+	// 	// margin: 300px 0 100px 0;
 
-		&_top {
+	// 	// &_top {
 
-			&-txt {
+	// 	// 	&-txt {
 
-				h3 {
-					font-size: 30px;
-				}
+	// 	// 		h3 {
+	// 	// 			font-size: 30px;
+	// 	// 		}
 
-				p {
-					font-size: 20px;
-				}
-			}
+	// 	// 		p {
+	// 	// 			font-size: 20px;
+	// 	// 		}
+	// 	// 	}
 
-			&-arrow {
-				width: 50%;
+	// 	// 	&-arrow {
+	// 	// 		width: 50%;
 
-				&--img {
-					margin: 60px auto 60px auto;
-				}
-			}
-		}
+	// 	// 		&--img {
+	// 	// 			margin: 60px auto 60px auto;
+	// 	// 		}
+	// 	// 	}
+	// 	// }
 
-		&_bottom {
+	// 	// &_bottom {
 
-			&-form {
-				display: flex;
-				justify-content: flex-end;
-				width: 100%;
+	// 	// 	&-form {
+	// 	// 		display: flex;
+	// 	// 		justify-content: flex-end;
+	// 	// 		width: 100%;
 
-				&--box {
-					width: 500px;
-					height: 100px;
-					margin: 0;
-					font-size: 25px;
-				}
-			}
-		}
-	}
+	// 	// 		&--box {
+	// 	// 			width: 500px;
+	// 	// 			height: 100px;
+	// 	// 			margin: 0;
+	// 	// 			font-size: 25px;
+	// 	// 		}
+	// 	// 	}
+	// 	// }
+	// }
 
-	.footer {
-		display: flex;
-	}
+	// .footer {
+	// 	display: flex;
+	// }
 }
 
 @media (min-width: 1024px) {
 
-	.nav_overlay-content a {
-		font-size: 60px;
-	}
+	// .nav_overlay-content a {
+	// 	font-size: 60px;
+	// }
 
-	.portfolio_list-link--item {
-		font-size: 60px;
-	}
+	// .portfolio_list-link--item {
+	// 	font-size: 60px;
+	// }
 
-	.about {
+	// .about {
 
-		&_head {
-			font-size: 60px;
-		}
+	// 	&_head {
+	// 		font-size: 60px;
+	// 	}
 
-		&_text {
-			font-size: 30px;
-		}
-	}
+	// 	&_text {
+	// 		font-size: 30px;
+	// 	}
+	// }
 
-	.contact {
+	// .contact {
 
-		&_top {
+	// 	&_top {
 
-			&-txt {
+	// 		&-txt {
 
-				h3 {
-					font-size: 60px;
-				}
+	// 			h3 {
+	// 				font-size: 60px;
+	// 			}
 
-				p {
-					font-size: 30px;
-				}
-			}
+	// 			p {
+	// 				font-size: 30px;
+	// 			}
+	// 		}
 
-			&-arrow {
-				width: 60%;
-			}
-		}
+	// 		&-arrow {
+	// 			width: 60%;
+	// 		}
+	// 	}
 
-		&_bottom {
+	// 	&_bottom {
 
-			&-form {
+	// 		&-form {
 
-				&--box {
-					width: 600px;
-					font-size: 30px;
-				}
-			}
-		}
-	}
+	// 			&--box {
+	// 				width: 600px;
+	// 				font-size: 30px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 @media (min-width: 1200px) {
 
-	/*navbar hide-show scrolling classes - using in nabar_scrolling.js*/
-	.nav.hide {
-		top: -150px;
-	}
+	/*navbar hide-show scrolling classes - using in navbar_scrolling.js*/
+	// .nav.hide {
+	// 	top: -150px;
+	// }
 
-	.nav_logo.scroll-logo {
-		width: 40px;
-		margin: -25px -25px 0 0;
-	}
+	// .nav_logo.scroll-logo {
+	// 	width: 40px;
+	// 	margin: -25px -25px 0 0;
+	// }
 
-	.nav_logo-syg.scroll-logoSyg {
-		width: 40px;
-	}
+	// .nav_logo-syg.scroll-logoSyg {
+	// 	width: 40px;
+	// }
 
-	.nav_logo-txt.scroll-logoTxt {
-		width: 40px;
-	}
+	// .nav_logo-txt.scroll-logoTxt {
+	// 	width: 40px;
+	// }
 
-	.nav_list-item.scroll-menuItem {
-		margin: -20px 0 0 0;
-	}
+	// .nav_list-item.scroll-menuItem {
+	// 	margin: -20px 0 0 0;
+	// }
 
-	.nav_list-item--link.scroll-menuLink {
-		font-size: 8px;
-	}
+	// .nav_list-item--link.scroll-menuLink {
+	// 	font-size: 8px;
+	// }
 
 	/*top nav section*/
 	.nav {

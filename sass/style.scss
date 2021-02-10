@@ -1,8 +1,15 @@
-@import "_variables";
-@import "_reset";
-@import "_base";
-@import "_header";
+@import 'abstracts/variables';
+@import 'abstracts/keyframes';
+@import 'abstracts/mixins';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sections';
+
+@import 'components/portfolio-photos';
+
+@import 'base/base';
+@import 'base/reset';
+@import 'base/fonts';
+
 @import "_mediaqueries";
-@import "_keyframes";
-@import "_fonts";
-@import "_portfolio-photos";

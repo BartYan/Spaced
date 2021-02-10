@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'obviously_wide_regular';
+    background-color: $color_white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.color_red {
+    color: $color_red !important;
+}
+
+.color_white {
+    color: $color_white !important;
+}
