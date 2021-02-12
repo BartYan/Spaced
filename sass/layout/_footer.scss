@@ -7,13 +7,35 @@
     @media (min-width: 768px) {
         display: flex;
     }
+    @media (min-width: 1200px) {
+        margin: 250px 0 0 0;
+    }
+    @media (min-width: 1600px) {
+        margin: 300px 0 0 0;
+    }
+    @media (min-width: 2200px) {
+        margin: 400px 0 0 0;
+		font-size: 15px;
+    }
+    @media (min-width: 2800px) {
+        width: 1100px;
+        height: 250px;
+        font-size: 60px;
+    }
 
     &_box {
         padding: 25px 0 25px 0;
+        @media (min-width: 1200px) {
+            display: flex;
+			padding: 0;
+        }
     }
 
     &_nav {
         padding: 0 0 0 5px;
+        @media (min-width: 1200px) {
+            padding: 50px 100px 150px 100px;
+        }
 
         &-link {
             text-decoration: none;
@@ -32,6 +54,9 @@
         &-item {
             width: 12px;
             padding: 0 30px 0 0;
+            @media (min-width: 2200px) {
+                width: 20px;
+            }
         }
     }
 }

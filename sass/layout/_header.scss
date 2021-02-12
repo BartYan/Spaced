@@ -11,20 +11,44 @@
 	font-family: 'obviously_wide_semibold';
 	//font-weight: bold;
 	transition: top 1s;
+	@media (min-width: 1200px) {
+		position: fixed;
+		height: auto;
+		transition: top 1s;
+		top: 0;
+	}
 
 	&_list {
 		display: none; //desktop flex;
+		@media (min-width: 1200px) {
+			display: flex;
+		}
 
 		&-item {
 			display: block;
 			padding: 50px 10px 0 90px;
 			transition: 1s, color 0.1s;
+			@media (min-width: 1200px) {
+				padding: 25px 5px 15px 50px;
+			}
+			@media (min-width: 2200px) {
+				padding: 40px 30px 30px 70px;
+			}
 
 			&--link {
 				text-decoration: none;
 				border: none;
 				color: #000;
 				transition: 1s, color 0.1s;
+				@media (min-width: 1200px) {
+					font-size: 10px;
+				}
+				@media (min-width: 2200px) {
+					font-size: 18px;
+				}
+				@media (min-width: 2800px) {
+					font-size: 25px;
+				}
 			}
 
 			&--link:hover {
@@ -37,15 +61,29 @@
 		position: relative;
 		width: 50px;
 		padding: 10px 10px 0 0;
+		@media (min-width: 1200px) {
+			width: 105px;
+			padding: 30px 30px 0 0;
+			margin: 0;
+			transition: 1s;
+		}
 
 		&-syg {
 			position: absolute;
 			width: 50px;
+			@media (min-width: 1200px) {
+				width: 105px;
+				transition: width 1s;
+			}
 		}
 
 		&-txt {
 			position: absolute;
 			width: 50px;
+			@media (min-width: 1200px) {
+				width: 105px;
+				transition: width 1s;
+			}
 			//Rotate effect with transform on hover
 			/*-webkit-transition-duration: 1s;
 			-moz-transition-duration: 1s;
@@ -71,6 +109,9 @@
 		width: 40px;
 		cursor: pointer;
 		z-index: 10;
+		@media (min-width: 1200px) {
+			display: none;
+		}
 
 		&-bar {
 			background-color: #000;
@@ -187,5 +228,45 @@
 
 	.nav_list-item--link.scroll-menuLink {
 		font-size: 8px;
+	}
+}
+
+@media (min-width: 2200px) {
+
+	//navbar hide-show scrolling classes - using in nabar_scrolling.js*/
+	.nav_list-item--link.scroll-menuLink {
+		font-size: 15px;
+	}
+
+	.nav_logo.scroll-logo {
+		width: 60px;
+	}
+
+	.nav_logo-syg.scroll-logoSyg {
+		width: 60px;
+	}
+
+	.nav_logo-txt.scroll-logoTxt {
+		width: 60px;
+	}
+}
+
+@media (min-width: 2800px) {
+
+	//navbar hide-show scrolling classes - using in nabar_scrolling.js*/
+	.nav_list-item--link.scroll-menuLink {
+		font-size: 20px;
+	}
+
+	.nav_logo.scroll-logo {
+		width: 70px;
+	}
+
+	.nav_logo-syg.scroll-logoSyg {
+		width: 70px;
+	}
+
+	.nav_logo-txt.scroll-logoTxt {
+		width: 70px;
 	}
 }
