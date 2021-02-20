@@ -14,7 +14,6 @@
   const logoSyg = document.querySelector('.nav_logo-syg');
   const logoTxt = document.querySelector('.nav_logo-txt');
   const menuItem = document.querySelectorAll('.nav_list-item');
-  const menuLink = document.querySelectorAll('.nav_list-item--link');
 
 
   const checkScroll = () => {
@@ -48,9 +47,6 @@
       menuItem.forEach(el => {
         el.classList.remove("scroll-menuItem")
       });
-      menuLink.forEach(el => {
-        el.classList.remove("scroll-menuLink")
-      });
       f = false;
     } 
 
@@ -71,9 +67,6 @@
       //menu links styles
       menuItem.forEach(el => {
         el.classList.add("scroll-menuItem")
-      });
-      menuLink.forEach(el => {
-        el.classList.add("scroll-menuLink")
       });
       f = true;
       prevDirection = direction;

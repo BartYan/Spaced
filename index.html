@@ -65,14 +65,14 @@
         </nav>
     </header>
 
-    <!-- TOP - OPENING SECTION-->
+    <!-- TOP OPENING SECTION-->
     <section class="container">
 
         <div class="container_head">
-            <h1 class="">
-                cześć!
+            <h1 class="container_head-big">
+                cześć
+                <span class="container_head-span">spaced studio</span>
             </h1>
-            <p class="">spaced studio</p>
         </div>
 
         <div class="container_body">
@@ -86,13 +86,17 @@
                     <img class="container_body-box--icon" src="img/gwiazdka czarna.svg" alt="">
                 </div>
             </div>
-            <div class="container_body-box container_body-center">
-                <img class="container_body-center--img" src="img/gwiazdka czarna.svg" alt="">
+            <div class="container_body-box">
+                <!-- desktop image -->
+                <img class="container_body-box--img" src="img/gwiazdka czarna.svg" alt="">
+                <!-- mobile stars icons -->
+                <img class="container_body-box--iconMobile" src="img/gwiazdka czarna.svg" alt="">
+                <img class="container_body-box--iconMobile" src="img/gwiazdka czarna.svg" alt="">
             </div>
             <div class="container_body-box">
                 <div class="container_body-box--item">
                     <img class="container_body-box--icon" src="img/gwiazdka czarna.svg" alt="">
-                    <p class="container_body-box--txt" >brand</p>
+                    <p class="container_body-box--txt">brand</p>
                 </div>
                 <div class="container_body-box--item">
                     <img class="container_body-box--icon" src="img/gwiazdka czarna.svg" alt="">
@@ -106,8 +110,8 @@
             <p class="container_txt-p">ale nasze projekty kosmicznie poważnie</p>
         </div>
 
-        <div class="bigArrow">
-            <img class="bigArrow_img" src="img/bigArrow.png" alt="big moving arrow">
+        <div class="container_arrow">
+            <img class="container_arrow_img" src="img/bigArrow.png" alt="big moving arrow">
         </div>
 
         <!-- <img class="container_img" src="img/one.png" alt=""> -->
@@ -119,7 +123,7 @@
             <a href="https://www.behance.net/spacedstudio" target="_blank"><img class="container_social-icon"
                     src="img/behance_purple.svg" alt="behance icon"></a>
             <a href="https://www.behance.net/spacedstudio" target="_blank"><img class="container_social-icon"
-                    src="img/vimeo.svg" alt="behance icon"></a>
+                    src="img/vimeo.svg" alt="vimeo icon"></a>
         </div>
     </section>
 
@@ -211,17 +215,31 @@
                 <img class="portfolio_photos-17" src="img/ilustracja_2.jpg" alt="ilustration">
                 <img class="portfolio_photos-18" src="img/kosz.jpg" alt="ilustration">
             </div>
-
         </div>
     </section>
 
     <!--ABOUT SPACED SECTION-->
     <section id="about" class="about">
         <h2 class="about_head">spaced</h2>
-        <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus maximus ligula sit amet
-            rhoncus faucibus. Sed posuere iaculis sapien, eget gravida leo pulvinar sit amet. Morbi ac risus ipsum. In
-            id nisl maximus, posuere sapien eu, luctus enim. Fusce feugiat nisi ut ipsum sollicitudin, sit amet vehicula
-            tellus rhoncus.</p>
+        <p class="about_text">cześć! Jesteśmy Basia i Klaudia - duet grafików z Krakowa współpracujemy ze sobą od lat. W
+            studio spaced projektujemy logotypy, kreujemy nowe marki i odświeżamy te już istniejące. Uwielbiamy składać
+            książki i publikacje. Zajmujemy się też ilustracją i animacją. Nasza praca sprawia nam wielką frajdę!
+            Rozmawiamy z klientami i wprowadzamy ich wizję w życie dbając o każdy szczegół i profesjonalny efekt</p>
+        <div class="about_social">
+            <p class="about_social-text">zobacz najnowsze projekty na naszych social mediach &#8594;</p>
+            <div class="about_social-box">
+                <a href="https://www.instagram.com/spaced_studio" target="_blank"><img class="about_social-box--icon"
+                        src="img/instagram_purple.svg" alt="instagram icon"></a>
+                <a href="https://www.facebook.com/studiospaced" target="_blank"><img class="about_social-box--icon"
+                        src="img/facebook_purple.svg" alt="facebook icon"></a>
+                <a href="https://www.behance.net/spacedstudio" target="_blank"><img class="about_social-box--icon"
+                        src="img/behance_purple.svg" alt="behance icon"></a>
+                <a href="https://www.behance.net/spacedstudio" target="_blank"><img class="about_social-box--icon"
+                        src="img/vimeo.svg" alt="vimeo icon"></a>
+            </div>
+        </div>
+        <p class="about_text">nasza animacja &#x274B;made of plastic&#x274B; została wyróżniona w konkursie Timecode Akcja Animacja, możesz ją obejrzeć w naszym <a href="#portfolio">portfolio &#8593;</a></p>
+
         <img class="about_rightCircle" src="img/ilustracje animacje grafika_1.svg" alt="">
 
         <article class="about_photos">
@@ -229,14 +247,85 @@
                 <img class="about_photos-logo--syg" src="img/sygnet_logo.svg" alt="logo">
                 <img class="about_photos-logo--txt" src="img/logo_napis.svg" alt="logo text">
             </div>
-            <img class="about_photos-one" src="img/girls.jpg" alt="girls photo">
-            <img class="about_photos-two" src="img/girls2.jpg" alt="girls photo">
-            <img class="about_photos-three" src="img/girls3.jpg" alt="girls photo">
+            <img id="photoOne" class="about_photos-one" src="img/photos/a1.jpg" alt="girls photo">
+            <img id="photoTwo" class="about_photos-two" src="img/photos/b1.jpg" alt="girls photo">
+            <img id="photoThree" class="about_photos-three" src="img/photos/c1.jpg" alt="girls photo">
         </article>
     </section>
 
+     <!-- OFFER-->
+     <section class="container offer">
+
+        <div class="container_txt">
+            <p class="container_txt-bold">Co możemy dla ciebie zaprojektować?</p>
+        </div>
+
+        <div class="container_body">
+            <div class="container_body-box">
+                <div class="container_body-box--item container_body-box--left item-offer">
+                    <p class="container_body-box--txt">logo</p>
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                </div>
+                <div class="container_body-box--item container_body-box--left item-offer">
+                    <p class="container_body-box--txt">branding</p>
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                </div>
+                <div class="container_body-box--item container_body-box--left item-offer">
+                    <p class="container_body-box--txt">rebranding</p>
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                </div>
+                <div class="container_body-box--item container_body-box--left item-offer">
+                    <p class="container_body-box--txt">książka</p>
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                </div>
+                <div class="container_body-box--item container_body-box--left item-offer">
+                    <p class="container_body-box--txt">publikacja</p>
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                </div>
+            </div>
+            <div class="container_body-box">
+                <!-- desktop image -->
+                <img class="container_body-box--img" src="img/gwiazdka rozowa.svg" alt="">
+                <!-- mobile stars icons -->
+                <img class="container_body-box--iconMobile" src="img/gwiazdka rozowa.svg" alt="">
+                <img class="container_body-box--iconMobile" src="img/gwiazdka rozowa.svg" alt="">
+                <img class="container_body-box--iconMobile" src="img/gwiazdka rozowa.svg" alt="">
+                <img class="container_body-box--iconMobile" src="img/gwiazdka rozowa.svg" alt="">
+                <img class="container_body-box--iconMobile" src="img/gwiazdka rozowa.svg" alt="">
+            </div>
+            <div class="container_body-box">
+                <div class="container_body-box--item item-offer">
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                    <p class="container_body-box--txt">ilustracja</p>
+                </div>
+                <div class="container_body-box--item item-offer">
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                    <p class="container_body-box--txt">plakat</p>
+                </div>
+                <div class="container_body-box--item item-offer">
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                    <p class="container_body-box--txt">animacja</p>
+                </div>
+                <div class="container_body-box--item item-offer">
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                    <p class="container_body-box--txt">spot reklamowy</p>
+                </div>
+                <div class="container_body-box--item item-offer item-offer--last">
+                    <img class="container_body-box--icon icon-offer" src="img/gwiazdka rozowa.svg" alt="">
+                    <p class="container_body-box--txt">materiały promocyjne</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_txt">
+            <p class="container_txt-p">w spaced zajmujemy się też niestandardowymi</p>
+            <p class="container_txt-p">i odjechanymi w kosmos projektami</p>
+            <p class="container_txt-bold">Napisz do nas!</p>
+        </div>
+    </section>
+
     <!--CONTACT SECTION-->
-    <section id="contact" class="contact">
+    <!-- <section id="contact" class="contact">
         <div class="contact_top">
             <div class="contact_top-txt">
                 <h3>napisz do nas!</h3>
@@ -256,10 +345,10 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!--FOOTER SECTION-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer_box">
             <ul class="footer_nav">
                 <a href="#" class="footer_nav-link">
@@ -304,12 +393,13 @@
                 </a>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 
     <!--JS SCRIPTS-->
     <script src="js/mobile_menu.js"></script>
     <script src="js/navbar_scrolling.js"></script>
     <script src="js/portfolio_hover-photos.js"></script>
+    <script src="js/photo_swap.js"></script>
 </body>
 
 </html>

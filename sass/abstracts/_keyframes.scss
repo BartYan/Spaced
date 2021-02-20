@@ -51,8 +51,8 @@
 }
 
 
-/*MOVING BIG ARROW MOBILE*/
-@-webkit-keyframes movingArrowMobile {
+/*MOVING ARROW MOBILE*/
+@-webkit-keyframes movingArrow {
 	from {
 		-webkit-transform: translate3d(0, 0, 0);
 	}
@@ -62,7 +62,7 @@
 	}
 }
 
-@-moz-keyframes movingArrowMobile {
+@-moz-keyframes movingArrow {
 	from {
 		-moz-transform: translate3d(0, 0, 0);
 	}
@@ -72,7 +72,7 @@
 	}
 }
 
-@-ms-keyframes movingArrowMobile {
+@-ms-keyframes movingArrow {
 	from {
 		-ms-transform: translate3d(0, 0, 0);
 	}
@@ -82,7 +82,7 @@
 	}
 }
 
-@-o-keyframes movingArrowMobile {
+@-o-keyframes movingArrow {
 	from {
 		-o-transform: translate3d(0, 0, 0);
 	}
@@ -92,67 +92,13 @@
 	}
   }
 
-@keyframes movingArrowMobile {
+@keyframes movingArrow {
 	from {
 		transform: translate3d(0, 0, 0);
 	}
 
 	to {
 		transform: translate3d(0, 50px, 0);
-	}
-}
-
-
-/*MOVING BIG ARROW DESKTOP*/
-@-moz-keyframes movingArrowDesktop {
-	from {
-		-moz-transform: translate3d(0, 0, 0);
-	}
-
-	to {
-		-moz-transform: translate3d(0, 50px, 0);
-	}
-}
-
-@-ms-keyframes movingArrowDesktop {
-	from {
-		-ms-transform: translate3d(0, 0, 0);
-	}
-
-	to {
-		-ms-transform: translate3d(0, 50px, 0);
-	}
-}
-
-@-o-keyframes movingArrowDesktop {
-	from {
-		-o-transform: translate3d(0, 0, 0);
-	}
-
-	to {
-		-o-transform: translate3d(0, 50px, 0);
-	}
-  }
-
-@keyframes movingArrowDesktop {
-
-	from {
-		transform: translate3d(0, 0, 0);
-	}
-
-	to {
-		transform: translate3d(0, 50px, 0);
-	}
-}
-
-@-webkit-keyframes movingArrowDesktop {
-
-	from {
-		-webkit-transform: translate3d(0, 0, 0);
-	}
-
-	to {
-		-webkit-transform: translate3d(0, 50px, 0);
 	}
 }
 
