@@ -115,18 +115,6 @@
                 }
             }
 
-            .item-offer--last {
-                padding: 3px 0;
-
-                @media (min-width: 353px) {
-                    padding: 20px 0;
-                }
-
-                @media (min-width: 1200px) {
-                    padding: 0 20px;
-                }
-            }
-
             &--left {
                 justify-content: flex-end;
             }
@@ -217,16 +205,19 @@
 
         &-icon {
             display: block;
-            width: 20px;
+            width: 18px;
+            height: 18px;
             padding: 10px 10px;
-
+            
             @media (min-width: 768px) {
-                width: 30px;
+                width: 25px;
+                height: 25px;
                 padding: 10px 50px;
             }
 
             @media (min-width: 2800px) {
-                width: 50px;
+                width: 40px;
+                height: 40px;
                 padding: 20px 30px;
             }
         }
@@ -300,7 +291,7 @@
                 font-size: 20px;
                 font-weight: bold;
                 color: black;
-                -webkit-text-fill-color: $color_white;
+                -webkit-text-fill-color: transparent;
                 -webkit-text-stroke-width: 1px;
                 -webkit-text-stroke-color: black;
                 z-index: 5;
@@ -350,7 +341,7 @@
 /*About section*/
 .about {
     position: relative;
-    margin: 100px 0 150px 0;
+    margin: 100px 0 0 0;
     width: 100%;
 
     @media (min-width: 768px) {
@@ -447,6 +438,7 @@
 
             &--icon {
                 width: 20px;
+                height: 20px;
                 padding: 10px 0 0 35px;
 
                 @media (min-width: 1024px) {
@@ -587,6 +579,9 @@
 /*Offer section*/
 .offer {
     height: auto;
+    @media (min-width: 1200px) {
+        margin: -100px 0 0;
+    }
 }
 
 /*Contact section*/
@@ -617,6 +612,14 @@
             font-size: 40px;
         }
     }
+
+    &_tel {
+        margin-top: 20px;
+        @media (min-width: 1200px) {
+            margin-top: 50px;
+        }
+    }
+
     &_circle {
         display: none;
         z-index: -1;
