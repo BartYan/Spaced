@@ -1,0 +1,125 @@
+//Portfolio page container
+.portfolio_box {
+    position: relative;
+    width: 100%;
+
+    //moving black arrow box
+    &-arrow {
+        width: 80%;
+        margin: 70px auto;
+
+        @media (min-width: 1024px) {
+            margin: 150px auto;
+        }
+
+        &--img {
+            width: 15%;
+            -webkit-animation: movingArrow 1s infinite;
+            /* Safari 4+ */
+            -moz-animation: movingArrow 1s infinite;
+            /* Fx 5+ */
+            -o-animation: movingArrow 1s infinite;
+            /* Opera 12+ */
+            -ms-animation: movingArrow 1s infinite;
+            /*IE11 and Microsoft Edge*/
+            animation: movingArrow 1s infinite;
+            /* IE 10+, Fx 29+ */
+            animation-direction: alternate;
+
+            @media (min-width: 1024px) {
+                width: 5%;
+            }
+        }
+    }
+}
+
+//project informations
+.project {
+    width: 100%;
+    display: flex;
+    margin: 150px 0 0 0;
+
+    &_arrow {
+        width: 10%;
+        text-align: center;
+        margin: 10px 0 0 0;
+
+        &-img {
+            width: 50px;
+        }
+    }
+
+    &_box {
+        width: 80%;
+
+        @media (min-width: 1024px) {
+            display: flex;
+        }
+
+        &-info {
+            width: 60%;
+
+            &--head {
+                font-family: 'obviously_wide_bold';
+                font-size: 40px;
+                font-weight: bold;
+                color: black;
+                margin: 0 0 30px;
+            }
+
+            &--txt {
+                margin: 20px 0 0 0;
+            }
+        }
+
+        &-logo {
+            width: 40%;
+            position: relative;
+            margin: 50px 0 0 0;
+
+            &--img {
+                width: 50px;
+
+                @media (min-width: 1024px) {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.projectImage {
+    position: relative;
+    margin: 0 auto 0 auto;
+
+    &_img {
+        width: 100%;
+        height: auto;
+    }
+
+    &_arrow {
+        &-img {
+            position: absolute;
+            right: 3%;
+            bottom: 0;
+            width: 15%;
+            -webkit-animation: movingArrow 1s infinite;
+            /* Safari 4+ */
+            -moz-animation: movingArrow 1s infinite;
+            /* Fx 5+ */
+            -o-animation: movingArrow 1s infinite;
+            /* Opera 12+ */
+            -ms-animation: movingArrow 1s infinite;
+            /*IE11 and Microsoft Edge*/
+            animation: movingArrow 1s infinite;
+            /* IE 10+, Fx 29+ */
+            animation-direction: alternate;
+
+            @media (min-width: 1024px) {
+                width: 5%;
+            }
+        }
+    }
+}
