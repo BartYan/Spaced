@@ -2,17 +2,20 @@
 .portfolio_box {
     position: relative;
     width: 100%;
+
     @media (max-width: 1024px) {
-            margin-top: 30%;
-        }
+        margin-top: 30%;
+    }
 
     //moving black arrow box
     &-arrow {
         width: 80%;
         margin: 5% auto 10% auto;
+
         @media (max-width: 1024px) {
             margin: 5% auto 20% auto;
         }
+
         &--img {
             width: 15%;
             -webkit-animation: movingArrow 1s infinite;
@@ -39,37 +42,46 @@
     position: relative;
     width: 100%;
     margin: 10% 0 0 0;
+
     // ARROW NEXT & PREV
     &_arrowLeft {
         position: absolute;
         top: 5%;
         left: 7%;
+
         @media (max-width: 1024px) {
             top: 6%;
             left: 2%;
         }
+
         img {
             width: 30px;
+
             @media (max-width: 1024px) {
                 width: 20px;
             }
         }
     }
+
     &_arrowRight {
         position: absolute;
         top: 5%;
         right: 7%;
+
         @media (max-width: 1024px) {
             top: 6%;
             right: 2%;
         }
+
         img {
             width: 30px;
+
             @media (max-width: 1024px) {
                 width: 20px;
             }
         }
     }
+
     //TEXT & LOGO CONTAINER
     &_box {
         position: relative;
@@ -78,11 +90,11 @@
         margin: 0 auto;
 
         // @media (max-width: 1024px) {
-            
+
         // }
 
         &-info {
-            width: 60%;
+            width: 40%;
 
             &--head {
                 font-family: 'obviously_wide_bold';
@@ -90,6 +102,7 @@
                 font-weight: bold;
                 color: black;
                 margin: 0 0 30px;
+
                 @media (max-width: 1024px) {
                     font-size: 30px;
                 }
@@ -97,6 +110,15 @@
 
             &--txt {
                 margin: 20px 0 0 0;
+                a {
+                    text-decoration: none;
+                    border: none;
+                    color: black;
+                }
+        
+                a:hover {
+                    color: $color_red;
+                }
             }
         }
 
@@ -106,9 +128,7 @@
             bottom: 0;
             width: 15%;
 
-            @media (max-width: 1024px) {
-               
-            }
+            @media (max-width: 1024px) {}
         }
     }
 }
@@ -117,6 +137,7 @@
     position: relative;
     margin: 0 auto 0 auto;
     width: 80%;
+
     &_img {
         width: 100%;
         height: auto;
