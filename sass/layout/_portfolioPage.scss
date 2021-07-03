@@ -4,6 +4,10 @@
     width: 100%;
 
     @media (max-width: 1024px) {
+        margin-top: 12%;
+    }
+
+    @media (max-width: 700px) {
         margin-top: 30%;
     }
 
@@ -17,7 +21,9 @@
         }
 
         &--img {
-            width: 15%;
+            width: 5%;
+            display: block;
+            
             -webkit-animation: movingArrow 1s infinite;
             /* Safari 4+ */
             -moz-animation: movingArrow 1s infinite;
@@ -30,8 +36,12 @@
             /* IE 10+, Fx 29+ */
             animation-direction: alternate;
 
+            @media (max-width: 768px) {
+                margin: 5% auto 20% auto;
+            }
+
             @media (min-width: 1024px) {
-                width: 5%;
+                width: 3%;
             }
         }
     }
@@ -46,13 +56,17 @@
     // ARROW NEXT & PREV
     &_arrowLeft {
         position: absolute;
-        top: 5%;
-        left: 7%;
+        top: 24px;
+        left: 6%;
 
         @media (max-width: 1024px) {
-            top: 6%;
+            top: 15px;
             left: 2%;
         }
+        // @media (min-width: 1800px) {
+        //     top: 5%;
+        //     left: 7%;
+        // }
 
         img {
             width: 30px;
@@ -65,11 +79,11 @@
 
     &_arrowRight {
         position: absolute;
-        top: 5%;
-        right: 7%;
+        top: 24px;
+        right: 6%;
 
         @media (max-width: 1024px) {
-            top: 6%;
+            top: 15px;
             right: 2%;
         }
 
@@ -86,19 +100,42 @@
     &_box {
         position: relative;
         width: 80%;
-        height: 40vh;
+        min-height: 40vh;
         margin: 0 auto;
 
-        // @media (max-width: 1024px) {
-
-        // }
+        @media (max-width: 1024px) {
+            min-height: auto;
+        }
 
         &-info {
-            width: 40%;
+            width: 100%;
+            display: flex;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            div {
+                width: 40%;
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+
+            &--imgBox {
+                position: relative;
+                margin: 0;
+                @media (max-width: 768px) {
+                    margin: 0 auto;
+                }
+            }
 
             &--head {
                 font-family: 'obviously_wide_bold';
-                font-size: 40px;
+                font-size: 45px;
                 font-weight: bold;
                 color: black;
                 margin: 0 0 30px;
@@ -120,19 +157,51 @@
                     color: $color_red;
                 }
             }
+
+            // madeofplastic extra box
+            &--logos {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+                
+                img {
+                    width: 70%;
+                    height: auto;
+                    display: block;
+                    padding: 25% 30% 0 0;
+                    @media (max-width: 768px) {
+                        margin: 0 auto 15% auto;
+                        padding: 25% 0 0 0;
+                    }
+                }
+                img:first-child {
+                    width: 25%;
+                }
+            }
         }
 
         &-logo {
             position: absolute;
-            right: 10%;
-            bottom: 0;
-            width: 15%;
+            right: 25%;
+            top: 60%;
+            width: 35%;
+            margin: 0;
 
-            @media (max-width: 1024px) {}
+            @media (max-width: 768px) {
+                position: relative;
+                right: 0;
+                top: 0;
+                width: 30%;
+                display: block;
+                margin: 20% auto 0 auto;
+            }
         }
     }
 }
-
+// pink arrow
 .projectImage {
     position: relative;
     margin: 0 auto 0 auto;
@@ -148,21 +217,10 @@
             position: absolute;
             right: -10%;
             bottom: -3%;
-            width: 20px;
-            -webkit-animation: movingArrow 1s infinite;
-            /* Safari 4+ */
-            -moz-animation: movingArrow 1s infinite;
-            /* Fx 5+ */
-            -o-animation: movingArrow 1s infinite;
-            /* Opera 12+ */
-            -ms-animation: movingArrow 1s infinite;
-            /*IE11 and Microsoft Edge*/
-            animation: movingArrow 1s infinite;
-            /* IE 10+, Fx 29+ */
-            animation-direction: alternate;
+            width: 25px;
 
             @media (min-width: 1024px) {
-                width: 5%;
+                width: 4%;
             }
         }
     }

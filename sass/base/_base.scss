@@ -32,3 +32,16 @@ body {
 .color_white {
     color: $color_white !important;
 }
+
+.desktop {
+    display: block;
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+.mobile {
+    display: none;
+    @media (max-width: 600px) {
+        display: block;
+    }
+}
