@@ -51,14 +51,14 @@
 }
 
 
-/*MOVING ARROW MOBILE*/
+/*MOVING ARROW*/
 @-webkit-keyframes movingArrow {
 	from {
 		-webkit-transform: translate3d(0, 0, 0);
 	}
 
 	to {
-		-webkit-transform: translate3d(0, 50px, 0);
+		-webkit-transform: translate3d(0, 75%, 0);
 	}
 }
 
@@ -68,7 +68,7 @@
 	}
 
 	to {
-		-moz-transform: translate3d(0, 50px, 0);
+		-moz-transform: translate3d(0, 75%, 0);
 	}
 }
 
@@ -78,7 +78,7 @@
 	}
 
 	to {
-		-ms-transform: translate3d(0, 50px, 0);
+		-ms-transform: translate3d(0, 75% , 0);
 	}
 }
 
@@ -88,7 +88,7 @@
 	}
 
 	to {
-		-o-transform: translate3d(0, 50px, 0);
+		-o-transform: translate3d(0, 75%, 0);
 	}
   }
 
@@ -98,13 +98,12 @@
 	}
 
 	to {
-		transform: translate3d(0, 50px, 0);
+		transform: translate3d(0, 75%, 0);
 	}
 }
 
 
 //ROTATE LOGO ABOUT SECTION
-
 @-webkit-keyframes rotating {
 	from {
 		-webkit-transform: rotate(0deg);
@@ -155,34 +154,3 @@
 		transform: rotate(-360deg);
 	}
 }
-
-
-/*
-  @-webkit-keyframes rotating {
-	from {
-	  -webkit-transform: rotate(0deg);
-	  -o-transform: rotate(0deg);
-	  transform: rotate(0deg);
-	}
-	to {
-	  -webkit-transform: rotate(-360deg);
-	  -o-transform: rotate(-360deg);
-	  transform: rotate(-360deg);
-	}
-  }
-  @keyframes rotating {
-	from {
-	  -ms-transform: rotate(0deg);
-	  -moz-transform: rotate(0deg);
-	  -webkit-transform: rotate(0deg);
-	  -o-transform: rotate(0deg);
-	  transform: rotate(0deg);
-	}
-	to {
-	  -ms-transform: rotate(-360deg);
-	  -moz-transform: rotate(-360deg);
-	  -webkit-transform: rotate(-360deg);
-	  -o-transform: rotate(-360deg);
-	  transform: rotate(-360deg);
-	}
-  }*/

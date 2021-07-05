@@ -39,13 +39,13 @@
     opacity: 1;
   }
 }
-/*MOVING ARROW MOBILE*/
+/*MOVING ARROW*/
 @-webkit-keyframes movingArrow {
   from {
     -webkit-transform: translate3d(0, 0, 0);
   }
   to {
-    -webkit-transform: translate3d(0, 50px, 0);
+    -webkit-transform: translate3d(0, 75%, 0);
   }
 }
 @-moz-keyframes movingArrow {
@@ -53,7 +53,7 @@
     -moz-transform: translate3d(0, 0, 0);
   }
   to {
-    -moz-transform: translate3d(0, 50px, 0);
+    -moz-transform: translate3d(0, 75%, 0);
   }
 }
 @-ms-keyframes movingArrow {
@@ -61,7 +61,7 @@
     -ms-transform: translate3d(0, 0, 0);
   }
   to {
-    -ms-transform: translate3d(0, 50px, 0);
+    -ms-transform: translate3d(0, 75%, 0);
   }
 }
 @-o-keyframes movingArrow {
@@ -69,7 +69,7 @@
     -o-transform: translate3d(0, 0, 0);
   }
   to {
-    -o-transform: translate3d(0, 50px, 0);
+    -o-transform: translate3d(0, 75%, 0);
   }
 }
 @keyframes movingArrow {
@@ -77,7 +77,7 @@
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 75%, 0);
   }
 }
 @-webkit-keyframes rotating {
@@ -120,35 +120,6 @@
     transform: rotate(-360deg);
   }
 }
-/*
-  @-webkit-keyframes rotating {
-	from {
-	  -webkit-transform: rotate(0deg);
-	  -o-transform: rotate(0deg);
-	  transform: rotate(0deg);
-	}
-	to {
-	  -webkit-transform: rotate(-360deg);
-	  -o-transform: rotate(-360deg);
-	  transform: rotate(-360deg);
-	}
-  }
-  @keyframes rotating {
-	from {
-	  -ms-transform: rotate(0deg);
-	  -moz-transform: rotate(0deg);
-	  -webkit-transform: rotate(0deg);
-	  -o-transform: rotate(0deg);
-	  transform: rotate(0deg);
-	}
-	to {
-	  -ms-transform: rotate(-360deg);
-	  -moz-transform: rotate(-360deg);
-	  -webkit-transform: rotate(-360deg);
-	  -o-transform: rotate(-360deg);
-	  transform: rotate(-360deg);
-	}
-  }*/
 .nav {
   position: fixed;
   top: 0;
@@ -494,7 +465,6 @@
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
 }
 .container .gif_mobile {
   width: 50%;
@@ -508,23 +478,18 @@
 }
 .container_head {
   margin: 0 auto;
-  padding: 80px 0 0 0;
+  padding: 7% 0 0 0;
   text-align: center;
   z-index: 10;
 }
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
   .container_head {
-    padding: 8% 0 0 0;
+    padding: 10% 0 0 0;
   }
 }
-@media (min-width: 2200px) {
+@media (max-width: 425px) {
   .container_head {
-    padding: 200px 0 0 0;
-  }
-}
-@media (min-width: 2800px) {
-  .container_head {
-    padding: 300px 0 0 0;
+    padding: 20% 0 0 0;
   }
 }
 .container_head-big {
@@ -712,6 +677,11 @@
 .container_txt-p {
   padding: 0 10px;
 }
+@media (max-width: 768px) {
+  .container_txt-p {
+    padding: 0 15px;
+  }
+}
 .container_txt-bold {
   font-family: "obviously_wide_bold";
   font-weight: bold;
@@ -719,7 +689,7 @@
 }
 .container_social {
   position: absolute;
-  bottom: 5%;
+  top: 0;
   left: 0;
 }
 .container_social-icon {
@@ -746,26 +716,14 @@
   cursor: pointer;
 }
 .container_arrow {
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
+  position: relative;
+  margin: 5% auto 0 auto;
   text-align: center;
   width: 100%;
 }
-@media (min-width: 768px) {
-  .container_arrow {
-    width: 50%;
-  }
-}
-@media (min-width: 1200px) {
-  .container_arrow {
-    width: 30%;
-  }
-}
 .container_arrow-img {
-  width: 10%;
+  width: 50px;
+  margin: 0;
   -webkit-animation: movingArrow 1s infinite;
   /* Safari 4+ */
   -moz-animation: movingArrow 1s infinite;
@@ -778,13 +736,24 @@
   /* IE 10+, Fx 29+ */
   animation-direction: alternate;
 }
+@media (max-width: 700px) {
+  .container_arrow-img {
+    width: 30px;
+    margin: 10% 0 0 0;
+  }
+}
 
 /*Portfolio section*/
 .portfolio {
   display: block;
   position: relative;
   width: 100%;
-  margin: 100px 0 50px 0;
+  margin: 15% 0 10% 0;
+}
+@media (max-width: 768px) {
+  .portfolio {
+    margin: 25% 0 10% 0;
+  }
 }
 .portfolio_list {
   z-index: 15;
@@ -1146,6 +1115,22 @@
     margin: 200px 0;
   }
 }
+.contact_img {
+  position: absolute;
+  top: -100%;
+  left: 10%;
+  display: block;
+  width: 20%;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .contact_img {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
 .contact_head {
   font-family: "obviously_wide_semibold";
   margin: 0 auto;
@@ -1382,6 +1367,25 @@
     display: block;
     margin: 20% auto 0 auto;
   }
+}
+
+.video_container {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  padding: 50% 0 0 0;
+  /* 4:3 Aspect Ratio */
+  margin: 0 auto 5% auto;
+}
+.video_container-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .projectImage {
