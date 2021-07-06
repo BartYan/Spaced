@@ -7,6 +7,7 @@
     .gif_mobile {
         width: 50%;
         display: none;
+
         @media (max-width: 1199px) {
             display: block;
             margin: 0 auto;
@@ -22,6 +23,7 @@
         @media (max-width: 1024px) {
             padding: 10% 0 0 0;
         }
+
         @media (max-width: 425px) {
             padding: 20% 0 0 0;
         }
@@ -88,6 +90,12 @@
         }
     }
 
+    &_headOffer {
+        @media (min-width: 768px) {
+            padding: 4% 0 0 0;
+        }
+    }
+
     &_body {
         width: 100%;
         margin: 40px auto;
@@ -107,7 +115,7 @@
 
         &-box {
             position: relative;
-            width: 33%;
+            width: 33.33%;
 
             &--item {
                 display: flex;
@@ -128,6 +136,9 @@
             }
 
             &--txt {
+                color: #000;
+                text-decoration: none;
+
                 @media (min-width: 768px) {
                     padding: 20px 0;
                 }
@@ -183,6 +194,7 @@
                 @include center;
                 width: 90%;
                 display: none;
+                margin: 0 0 0 2%;
 
                 @media (min-width: 1200px) {
                     display: block;
@@ -197,8 +209,13 @@
 
         &-p {
             padding: 0 10px;
+
             @media (max-width: 768px) {
                 padding: 0 15px;
+            }
+
+            span {
+                font-family: 'obviously_wide_semibold';
             }
         }
 
@@ -219,11 +236,11 @@
             width: 18px;
             height: 18px;
             padding: 10px 10px;
-            
+
             @media (min-width: 768px) {
                 width: 25px;
                 height: 25px;
-                padding: 10px 50px;
+                padding: 10px 25px;
             }
 
             @media (min-width: 2800px) {
@@ -259,7 +276,7 @@
             animation: movingArrow 1s infinite;
             /* IE 10+, Fx 29+ */
             animation-direction: alternate;
-            
+
             @media (max-width: 700px) {
                 width: 30px;
                 margin: 10% 0 0 0;
@@ -281,7 +298,7 @@
 
     &_list {
         z-index: 15;
-        margin-left: 5px;
+        margin-left: 2%;
         list-style: none;
 
         @media (min-width: 1200px) {
@@ -369,8 +386,12 @@
         margin: 400px 0 100px 0;
     }
 
+    svg:hover {
+        fill: $color_red;
+    }
+
     &_head {
-        margin: 0 0 50px 5px;
+        margin: 0 0 50px 2%;
         font-family: 'obviously_wide_bold';
         font-size: 25px;
 
@@ -402,7 +423,7 @@
 
     &_text {
         width: 95%;
-        margin: 0 0 0 5px;
+        margin: 0 2%;
         text-align: justify;
 
         @media (min-width: 1200px) {
@@ -423,7 +444,7 @@
 
     &_social {
         width: 95%;
-        margin: 50px 0 50px 5px;
+        margin: 50px 2%;
         text-align: justify;
 
         @media (min-width: 1024px) {
@@ -559,6 +580,22 @@
             }
         }
 
+        &-one--label {
+            // position: absolute;
+            // bottom: 30%;
+            // right: 0;
+            // z-index: 7;
+            // font-size: 0.4rem;
+            // color: $color_red;
+            -ms-transform:rotate(50deg);
+            /* IE 9 */
+            transform:rotate(90deg);
+
+            @media (min-width: 1200px) {
+                display: none;
+            }
+        }
+
         &-two {
             display: none;
 
@@ -590,6 +627,7 @@
 /*Offer section*/
 .offer {
     height: auto;
+
     @media (min-width: 1200px) {
         margin: -100px 0 0;
     }
@@ -601,9 +639,11 @@
     width: 100%;
     text-align: center;
     margin: 100px 0;
+
     @media (min-width: 1200px) {
         margin: 150px 0;
     }
+
     @media (min-width: 1600px) {
         margin: 200px 0;
     }
@@ -616,6 +656,7 @@
         display: block;
         width: 20%;
         margin: 0;
+
         @media (max-width: 768px) {
             position: relative;
             top: 0;
@@ -635,6 +676,7 @@
         @media (min-width: 768px) {
             font-size: 30px;
         }
+
         @media (min-width: 1600px) {
             font-size: 40px;
         }
@@ -642,6 +684,10 @@
 
     &_tel {
         margin-top: 20px;
+        color: #000;
+        border: none;
+        text-decoration: none;
+
         @media (min-width: 1200px) {
             margin-top: 50px;
         }
@@ -658,5 +704,19 @@
             top: -100px;
             left: 0;
         }
+    }
+}
+
+.pre_footer {
+    width: 80%;
+    margin: 10% auto 30px auto;
+    text-align: center;
+
+    &-txt {
+        padding-bottom: 15px;
+    }
+
+    &-bold {
+        font-family: 'obviously_wide_semibold';
     }
 }
