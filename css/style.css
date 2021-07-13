@@ -1387,7 +1387,7 @@
   }
 }
 .project_box-info--logos img {
-  width: 70%;
+  width: 150px;
   height: auto;
   display: block;
   padding: 25% 30% 0 0;
@@ -1399,7 +1399,7 @@
   }
 }
 .project_box-info--logos img:first-child {
-  width: 25%;
+  width: 50px;
 }
 .project_box-logo {
   position: absolute;
