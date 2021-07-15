@@ -118,7 +118,7 @@
                 flex-direction: column;
             }
 
-            div {
+            &--items {
                 width: 40%;
                 @media (max-width: 768px) {
                     width: 100%;
@@ -127,6 +127,7 @@
 
             &--imgBox {
                 position: relative;
+                width: 40%;
                 margin: 0;
                 @media (max-width: 768px) {
                     margin: 0 auto;
@@ -163,22 +164,27 @@
                 width: 100%;
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
+                margin: 10% 0 0 0;
                 @media (max-width: 768px) {
                     flex-direction: column;
                 }
                 
                 img {
-                    width: 150px;
+                    width: 25%;
                     height: auto;
                     display: block;
-                    padding: 25% 30% 0 0;
                     @media (max-width: 768px) {
-                        margin: 0 auto 15% auto;
-                        padding: 25% 0 0 0;
+                        margin: 5% auto 15% auto;
+                        width: 50%;
                     }
                 }
                 img:first-child {
-                    width: 50px;
+                    width: 10%;
+                    @media (max-width: 768px) {
+                        margin: 5% auto 15% auto;
+                        width: 20%;
+                    }
                 }
             }
         }
@@ -194,7 +200,7 @@
                 position: relative;
                 right: 0;
                 top: 0;
-                width: 30%;
+                width: 50%;
                 display: block;
                 margin: 20% auto 0 auto;
             }
